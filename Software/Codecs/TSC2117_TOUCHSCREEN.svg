@@ -1,0 +1,101 @@
+<?xml version="1.0" standalone="no"?>
+<!--Created with Sketsa SVG Editor (http://www.kiyut.com)-->
+<svg contentScriptType="text/ecmascript" width="1000.0px" xmlns:xlink="http://www.w3.org/1999/xlink"
+    baseProfile="full" zoomAndPan="magnify" contentStyleType="text/css" height="1200.0px"
+    preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+    <metadata id="I2CData" file="Codecs\TSC2117_TOUCHSCREEN_Init.txt" dll="Codecs\AIC3XXX.DLL"/>
+    <rect x="510.0" y="50.0" fill="none" width="140.0" height="200.0" stroke="#000000" function="touchscreen"/>
+    <rect x="690.0" y="50.0" fill="none" width="50.0" Function="DConf" height="200.0" stroke="#000000"/>
+    <rect fill="none" x="255.0" width="35.0" y="290.0" height="50.0" stroke="#000000"/>
+    <line y2="300.0" fill="none" x1="70.0" x2="255.0" y1="300.0" stroke="#000000"/>
+    <line y2="310.0" fill="none" x1="70.0" x2="255.0" y1="310.0" stroke="#000000"/>
+    <line y2="320.0" fill="none" x1="70.0" x2="255.0" y1="320.0" stroke="#000000"/>
+    <line y2="330.0" fill="none" x1="70.0" x2="255.0" y1="330.0" stroke="#000000"/>
+    <line y2="300.0" fill="none" x1="290.0" x2="375.0" y1="300.0" stroke="#000000"/>
+    <line y2="310.0" fill="none" x1="290.0" x2="375.0" y1="310.0" stroke="#000000"/>
+    <line y2="320.0" fill="none" x1="290.0" x2="375.0" y1="320.0" stroke="#000000"/>
+    <line y2="330.0" fill="none" x1="290.0" x2="375.0" y1="330.0" stroke="#000000"/>
+    <line y2="360.0" fill="none" x1="70.0" x2="375.0" y1="360.0" stroke="#000000"/>
+    <line y2="385.0" fill="none" x1="70.0" x2="375.0" y1="385.0" stroke="#000000"/>
+    <line y2="415.0" fill="none" x1="70.0" x2="260.0" y1="415.0" stroke="#000000"/>
+    <rect fill="none" x="260.0" width="25.0" y="405.0" height="20.0" stroke="#000000"/>
+    <line y2="415.0" fill="none" x1="285.0" x2="375.0" y1="415.0" stroke="#000000"/>
+    <polygon fill="none" points="375.0,425.0 375.0,290.0 405.0,310.0 405.0,405.0" stroke="#000000"
+        function="SAR_IN_MUX"/>
+    <polygon fill="none" points="460.0,360.0 470.0,350.0 490.0,350.0 490.0,370.0 470.0,370.0"
+        stroke="#000000"/>
+    <text x="469.91666" y="363.16675"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">ADC</tspan><tspan xml:space="preserve"> </tspan></text>
+    <line y2="360.0" fill="none" x1="405.0" x2="460.0" y1="360.0" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="68.75" cy="300.0417" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="68.75" cy="310.0417" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="68.75" cy="320.0417" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="68.75" cy="330.0417" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="68.75" cy="360.04175" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="68.75" cy="385.04175" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="68.75" cy="415.04175" stroke="#000000"/>
+    <text x="49.833336" y="302.4167"><tspan font-family="'Arial', 'Helvetica', sans-serif"
+            font-size="8" xml:space="preserve">X+</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="49.833336" y="312.4167"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">Y+</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="49.833336" y="322.4167"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">X-</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="49.833336" y="332.4167"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">Y+</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="29.333334" y="362.4167"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">IN1/AUX1</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="29.333334" y="387.4167"><tspan font-family="'Arial', 'Helvetica', sans-serif"
+            font-size="8" xml:space="preserve">IN2/AUX2</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="39.833336" y="417.4167"><tspan font-family="'Arial', 'Helvetica', sans-serif"
+            font-size="8" xml:space="preserve">VBAT</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="269.75" y="416.75"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">%5</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="265.0" y="306.75"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">Touch</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="264.75" y="314.25"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="6"
+            xml:space="preserve">Panel</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="264.75" y="321.75"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="6"
+            xml:space="preserve">Drivers</tspan><tspan xml:space="preserve"> </tspan></text>
+    <rect fill="none" x="690.0" width="50.0" y="270.0" height="160.0" stroke="#000000"/>
+    <line y2="360.0" fill="none" x1="490.0" x2="690.0" y1="360.0" stroke="#000000"/>
+    <polyline fill="none" points="580.0,250.0 580.0,300.0 690.0,300.0" stroke="#000000"/>
+    <line y2="380.0" fill="none" x1="690.0" x2="480.0" y1="380.0" stroke="#000000"/>
+    <line y2="370.0" fill="none" x1="480.0" x2="480.0" y1="380.0" stroke="#000000"/>
+    <text x="485.0" y="389.25"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="6"
+            xml:space="preserve">VREF</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="509.91663" y="45.666748"><tspan font-family="'Arial', 'Helvetica', sans-serif"
+            font-size="8" xml:space="preserve">Touchscreen</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="699.5" y="140.75"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">Digital</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="699.5" y="150.75"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="8"
+            xml:space="preserve">Audio</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="699.5" y="160.75"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="8"
+            xml:space="preserve">Processing</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="699.5" y="185.75"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="8"
+            xml:space="preserve">Serial</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="699.5" y="195.75"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="8"
+            xml:space="preserve">Interface</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="699.5" y="305.75"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="8"
+            xml:space="preserve">Touch</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="700.0" y="315.75"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">Screen</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="700.0" y="325.75"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">Processing</tspan><tspan xml:space="preserve"> </tspan></text>
+    <polygon fill="none" points="460.0,320.0 465.0,330.0 495.0,330.0 500.0,320.0" stroke="#000000"
+        function="SAR_CLK_MUX"/>
+    <line y2="350.0" fill="none" x1="480.0" x2="480.0" y1="330.0" stroke="#000000"/>
+    <polyline fill="none" points="510.0,305.0 490.0,305.0 490.0,320.0" stroke="#000000"/>
+    <polyline fill="none" points="510.0,295.0 480.0,295.0 480.0,320.0" stroke="#000000"/>
+    <polyline fill="none" points="510.0,275.0 470.0,275.0 470.0,320.0" stroke="#000000"/>
+    <rect fill="none" x="510.0" width="30.0" y="265.0" height="20.0" stroke="#000000"/>
+    <line y2="275.0" fill="none" x1="565.0" x2="540.0" y1="275.0" stroke="#000000"/>
+    <text x="547.0" y="271.75"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">MCLK</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="517.0" y="276.75"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">Divider</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="490.0" y="291.75"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">RC CLK</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="489.5" y="301.75"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="6"
+            xml:space="preserve">SCLK</tspan><tspan xml:space="preserve"> </tspan></text>
+    <line y2="270.0" fill="none" x1="715.0" x2="715.0" y1="250.0" stroke="#000000"/>
+</svg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EVM>
+  <Unknown Diagram-1="Codecs\Unknown.svg" />
+  <TLV320AIC3100EVM-U Diagram-1="Codecs\AIC3100_USB.svg" Diagram-Clock="Codecs\AIC3111_Clock.svg" Registermap="Codecs\AIC3111_Registers.txt" />
+  <TLV320AIC3110EVM-U Diagram-1="Codecs\AIC3111_USB.svg" Diagram-Clock="Codecs\AIC3111_Clock.svg" Registermap="Codecs\AIC3111_Registers.txt" />
+  <TLV320AIC3111EVM-K Diagram-1="Codecs\AIC3111.svg" Diagram-2="Codecs\AIC3111_PLAYBACK.svg" Diagram-3="Codecs\AIC3111_RECORD.svg" Diagram-Clock="Codecs\AIC3111_Clock.svg" Registermap="Codecs\AIC3111_Registers.txt" />
+  <TLV320AIC3111EVM-U Diagram-1="Codecs\AIC3111_USB.svg" Diagram-2="Codecs\AIC3111_USB_PLAYBACK.svg" Diagram-3="Codecs\AIC3111_USB_RECORD.svg" Diagram-Clock="Codecs\AIC3111_Clock.svg" Registermap="Codecs\AIC3111_Registers.txt"></TLV320AIC3111EVM-U>
+  <TLV320AIC3120EVM-U Diagram-1="Codecs\AIC3120_USB.svg" Diagram-Clock="Codecs\AIC3111_Clock.svg" Registermap="Codecs\AIC3111_Registers.txt" />
+  <TLV320DAC3101EVM-U Diagram-1="Codecs\DAC3101_USB.svg" Diagram-Clock="Codecs\AIC3111_Clock.svg" Registermap="Codecs\DAC3101_Registers.txt" />
+  <TLV320DAC3120EVM-U Diagram-1="Codecs\DAC3120_USB.svg" Diagram-Clock="Codecs\DAC3XXX_Clock.svg" Registermap="Codecs\DAC3120_Registers.txt" />
+</EVM>

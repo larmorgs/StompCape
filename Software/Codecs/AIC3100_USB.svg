@@ -1,0 +1,807 @@
+<?xml version="1.0" standalone="no"?>
+<!--Created with Sketsa SVG Editor (http://www.kiyut.com)-->
+<svg contentScriptType="text/ecmascript" width="1000.0px" xmlns:xlink="http://www.w3.org/1999/xlink"
+    baseProfile="full" zoomAndPan="magnify" contentStyleType="text/css" height="1200.0px"
+    preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+    <rect x="680.0" y="150.0" fill="none" width="50.0" shadow="1" height="510.3333" stroke="#000000"
+        gradient="1"/>
+    <rect x="380.0" y="20.0" fill="none" width="50.0" shadow="1" height="40.0" stroke="#000000"
+        gradient="1"/>
+    <rect x="150.0" y="285.0" fill="none" width="95.0" shadow="1" height="120.0" stroke="#000000"
+        gradient="1"/>
+    <rect x="255.0" y="285.0" fill="none" width="95.0" shadow="1" height="120.0" stroke="#000000"
+        gradient="1"/>
+    <rect x="255.0" y="125.0" fill="none" width="95.0" shadow="1" height="120.0" stroke="#000000"
+        gradient="1"/>
+    <rect x="150.0" y="124.333336" fill="none" width="95.0" shadow="1" height="120.0" stroke="#000000"
+        gradient="1"/>
+    <metadata dll="Codecs\AIC3XXX.DLL" id="I2CData" file="Codecs\AIC3111_USB_Init.txt"/>
+    <rect x="450.0" y="20.0" fill="none" width="110.0" shadow="1" height="40.0" stroke="#000000"
+        gradient="1"/>
+    <text x="460" y="37.0"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="8"
+            xml:space="preserve">Audio Output Stage</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="460.0" y="50"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">Power Management</tspan><tspan xml:space="preserve"> </tspan></text>
+    <line y2="40.0" fill="none" x1="450.0" x2="430.0" y1="40.0" stroke="#000000"/>
+    <rect x="380.0" y="20.0" fill="none" width="50.0" height="40.0" stroke="#000000" function="DePop"/>
+    <text x="385" y="37.0"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="8"
+            xml:space="preserve">De-Pop</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="385" y="50"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">SoftStart</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="314.0" y="27.0"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">VOL_RAMP</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="314.0" y="37.0"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">PWR_DOWN_SPKR</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="314.0" y="47.0"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">PWR_DOWN_HP</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="409.5" y="88"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="6"
+            xml:space="preserve">RC_CLK</tspan><tspan xml:space="preserve"> </tspan></text>
+    <line y2="175.0" fill="none" x1="307.5" x2="300.0" stroke="#000000" y1="182.5"/>
+    <text x="154.5" y="136.0"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">Class-D Speaker Driver </tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="154.5" y="146.0"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="8"
+            xml:space="preserve">6dB to 24dB</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="264.5" y="136.0"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="8"
+            xml:space="preserve">Analog Attenuation</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="265.0" y="145.5"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">0dB to -78dB + Mute</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="324.5" y="164.5"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">MIX_L</tspan><tspan xml:space="preserve"> </tspan></text>
+    <polyline fill="none" points="405.0,60.0 405.0,90.0 435.0,90.0" stroke="#000000"/>
+    <text x="379.5" y="103"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">PWR_DOWN_SPKR</tspan><tspan xml:space="preserve"> </tspan></text>
+    <line y2="315.0" fill="none" x1="187.5" x2="180.0" stroke="#000000" y1="322.5"/>
+    <line y2="315.0" fill="none" x1="287.5" x2="280.0" y1="322.5" stroke="#000000"/>
+    <line y2="360.0" fill="none" x1="287.5" x2="280.0" y1="367.5" stroke="#000000"/>
+    <line y2="380.0" fill="none" x1="207.5" x2="200.0" y1="387.5" stroke="#000000"/>
+    <text x="154.5" y="296.0"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="8"
+            xml:space="preserve">Class-A/B HP Driver </tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="154.5" y="306.0"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">0dB to 9dB</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="264.5" y="296.0"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">Analog Attenuation</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="265.0" y="305.5"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="8"
+            xml:space="preserve">0dB to -78dB + Mute</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="324.5" y="324.5"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="6"
+            xml:space="preserve">MIX_L</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="324.5" y="369.5"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="6"
+            xml:space="preserve">MIX_R</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="389.5" y="423.0"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="6"
+            xml:space="preserve">PWR_DOWN_HP</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="400.0" y="261"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="6"
+            xml:space="preserve">VOL_RAMP</tspan><tspan xml:space="preserve"> </tspan></text>
+    <ellipse fill="none" ID="1001" rx="10.0" cx="405.0" cy="170.0" Net="30001, 10003, 40001, 10004"
+        ry="10.0" stroke="#000000" function="mixer"/>
+    <ellipse ActiveColor="0x00bbbb00" fill="none" ID="2001" rx="10.0" cx="405.0" ry="10.0" cy="215.0"
+        Net="20003, 30002, 20004" stroke="#000000" function="mixer"/>
+    <text x="456.1667" y="147.54167"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">MIC1LP</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="456.0833" y="187.54166"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">MIC1RP</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="456.1667" y="231.08333"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">MIC1RP</tspan><tspan xml:space="preserve"> </tspan></text>
+    <line y2="220.0" fill="none" x1="565.0" x2="557.5" stroke="#000000" y1="227.5"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="565.0" cy="227.5" stroke="#000000"/>
+    <ellipse fill="none" ID="1006" rx="10.0" cx="630.0" cy="170.0" Net="10001, 15001, 10002" ry="10.0"
+        stroke="#000000" function="mixer"/>
+    <ellipse ActiveColor="0x00bbbb00" fill="none" ID="2006" rx="10.0" cx="630.0" ry="10.0" cy="215.0"
+        Net="20001, 15000, 20002" stroke="#000000" function="mixer"/>
+    <polyline fill="none" points="565.0,252.5 565.0,182.5 557.5,175.0" stroke="#000000"/>
+    <rect x="555.0" y="280.0" fill="none" width="20.0" height="12.5" stroke="#000000" function="beep"/>
+    <text x="557.0" y="289.25"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="6"
+            xml:space="preserve">BEEP</tspan><tspan xml:space="preserve"> </tspan></text>
+    <line y2="265.0" fill="none" x1="565.0" x2="565.0" y1="280.0" stroke="#000000"/>
+    <g>
+        <line y2="40.0" fill="none" x1="380.0" x2="310.0" y1="40.0" stroke="#000000"/>
+        <polyline fill="none" points="435.0,105.0 300.0,105.0 300.0,125.0" stroke="#000000"/>
+        <polyline fill="none" points="300.0,105.0 200.0,105.0 200.0,125.0" stroke="#000000"/>
+        <ellipse rx="1.25" fill="none" ry="1.25" cx="300.0" cy="105.0" stroke="#000000"/>
+    </g>
+    <g>
+        <line y2="30.0" fill="none" x1="380.0" x2="310.0" y1="30.0" stroke="#000000"/>
+        <polyline fill="none" points="435.0,265.0 300.0,265.0 300.0,285.0" stroke="#000000"/>
+        <line y2="265.0" fill="none" x1="300.0" x2="300.0" stroke="#000000" y1="245.0"/>
+        <ellipse rx="1.25" fill="none" ry="1.25" cx="300.0" cy="265.0" stroke="#000000"/>
+    </g>
+    <g>
+        <line y2="50.0" fill="none" x1="380.0" x2="310.0" y1="50.0" stroke="#000000"/>
+        <polyline fill="none" points="435.0,425.0 300.0,425.0 300.0,405.0" stroke="#000000"/>
+        <polyline fill="none" points="300.0,425.0 200.0,425.0 200.0,405.0" stroke="#000000"/>
+        <ellipse rx="1.25" fill="none" ry="1.25" cx="300.0" cy="425.0" stroke="#000000"/>
+    </g>
+    <ellipse fill="none" ID="1005" rx="1.25" cx="482.5" ry="1.25" cy="170.0" stroke="#000000"/>
+    <ellipse fill="none" ID="1101" rx="5.0" cx="250.0" cy="330.0" Net="10004, 10100, 10101" ry="5.0"
+        stroke="#000000" function="mixer"/>
+    <ellipse ActiveColor="0x00bbbb00" fill="none" ID="2101" rx="5.0" cx="250.0" ry="5.0" cy="375.0"
+        Net="20004, 20100, 20101" stroke="#000000" function="mixer"/>
+    <polyline fill="none" points="595.0,182.5 610.0,197.5 610.0,440.0 530.0,440.0" stroke="#000000"/>
+    <line y2="242.5" fill="none" x1="595.0" x2="610.0" stroke="#000000" y1="227.5"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="610.0" cy="242.5" stroke="#000000"/>
+    <line y2="435.0" fill="none" x1="515.0" x2="60.00002" stroke="#000000" y1="435.0"/>
+    <line y2="445.0" fill="none" x1="515.0" x2="485.0" stroke="#000000" y1="445.0"/>
+    <text x="395.0" y="449.5"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">VOLUME CONTROL REGISTER</tspan><tspan xml:space="preserve"> </tspan></text>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="58.75" cy="435.0" stroke="#000000"/>
+    <line y2="435.0" fill="none" x1="57.5" x2="36.25" stroke="#000000" y1="435.0"/>
+    <line y2="437.5" fill="none" x1="36.25" x2="38.75" stroke="#000000" y1="435.0"/>
+    <line y2="432.5" fill="none" x1="36.25" x2="38.75" stroke="#000000" y1="435.0"/>
+    <g>
+        <line y2="427.5" fill="none" x1="31.25" x2="28.75" stroke="#000000" y1="425.0"/>
+        <line y2="432.5" fill="none" x1="28.75" x2="33.75" stroke="#000000" y1="427.5"/>
+        <line y2="437.5" fill="none" x1="33.75" x2="28.75" stroke="#000000" y1="432.5"/>
+        <line y2="442.5" fill="none" x1="28.75" x2="33.75" stroke="#000000" y1="437.5"/>
+        <line y2="445.0" fill="none" x1="33.75" x2="31.25" stroke="#000000" y1="442.5"/>
+    </g>
+    <line y2="453.75" fill="none" x1="31.25" x2="31.25" stroke="#000000" y1="445.0"/>
+    <line y2="453.75" fill="none" x1="27.5" x2="35.0" stroke="#000000" y1="453.75"/>
+    <line y2="455.0" fill="none" x1="28.75" x2="33.75" stroke="#000000" y1="455.0"/>
+    <line y2="456.25" fill="none" x1="30.0" x2="32.5" stroke="#000000" y1="456.25"/>
+    <line y2="416.25" fill="none" x1="31.25" x2="31.25" stroke="#000000" y1="425.0"/>
+    <g>
+        <line y2="416.25" fill="none" x1="33.75" x2="31.25" y1="413.75" stroke="#000000"/>
+        <line y2="413.75" fill="none" x1="28.75" x2="33.75" y1="408.75" stroke="#000000"/>
+        <line y2="408.75" fill="none" x1="33.75" x2="28.75" y1="403.75" stroke="#000000"/>
+        <line y2="403.75" fill="none" x1="28.75" x2="33.75" y1="398.75" stroke="#000000"/>
+        <line y2="398.75" fill="none" x1="31.25" x2="28.75" y1="396.25" stroke="#000000"/>
+    </g>
+    <line y2="388.75" fill="none" x1="31.25" x2="31.25" stroke="#000000" y1="396.25"/>
+    <line y2="388.75" fill="none" x1="27.5" x2="35.0" stroke="#000000" y1="388.75"/>
+    <text x="35.0" y="394.5"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="6"
+            xml:space="preserve">AVDD</tspan><tspan xml:space="preserve"> </tspan></text>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="516.2083" cy="435.04166" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="516.2083" cy="445.04166" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="528.7083" cy="440.04166" stroke="#000000"/>
+    <rect x="517.5" Shift="7" y="435.0" I2CPage="0" transform="matrix(1.0 0.0 0.0 -1.0 0.0 880.0)"
+        fill="none" width="10.0" Mask="0x80" I2CRegister="116" height="10.0" stroke="#000000"
+        function="toggle"/>
+    <polygon function="amplifier" CustomGain="2" stroke="#000000" I2CPage="0" Mask="0x3F" fill="none"
+        TextLocation="5, 0" min="-61" step="1" points="572.5,265.0 557.5,265.0 565.0,252.5" Shift="0"
+        max="2" I2CRegister="71"/>
+    <line y2="490.0" fill="none" x1="60.0" x2="175.0" y1="490.0" stroke="#000000"/>
+    <polygon fill="none" points="175.0,490.0 187.5,482.5 187.5,497.5" stroke="#000000"/>
+    <line y2="490.0" fill="none" x1="250.0" x2="187.5" y1="490.0" stroke="#000000"/>
+    <text x="192.5" y="486.75"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">2V/2.5V/AVDD</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="19.333334" y="379.25"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">HPROUT</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="19.333334" y="332.25"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="8"
+            xml:space="preserve">HPLOUT</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="13.083333" y="180.58333"><tspan font-family="'Arial', 'Helvetica', sans-serif"
+            font-size="8" xml:space="preserve">SPK_LN</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="13.083333" y="165.58333"><tspan font-family="'Arial', 'Helvetica', sans-serif"
+            font-size="8" xml:space="preserve">SPK_LP</tspan><tspan xml:space="preserve"> </tspan></text>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="58.75" cy="490.0" stroke="#000000"/>
+    <text x="19.5" file="TSC2117_MICBIAS.jpg" y="492.41666" HintYOffset="0"><tspan font-family="'Arial', 'Helvetica', sans-serif"
+            font-size="8" xml:space="preserve">MICBIAS</tspan><tspan xml:space="preserve"> </tspan></text>
+    <g/>
+    <g/>
+    <g/>
+    <line y2="455.0" fill="none" x1="28.75" x2="33.75" y1="455.0" stroke="#000000"/>
+    <line y2="456.25" fill="none" x1="30.0" x2="32.5" y1="456.25" stroke="#000000"/>
+    <line y2="453.75" fill="none" x1="27.5" x2="35.0" y1="453.75" stroke="#000000"/>
+    <rect x="680.0" y="150.0" fill="none" width="50.0" height="510.3333" stroke="#000000" function="DConf"/>
+    <rect function="switch" ID="1005" stroke="#000000" I2CPage="1" width="16.25" fill="none" layout="horizontal"
+        height="7.5" Bit="6" Net="10002, 10003" x="435.0" y="162.5" I2CRegister="35"/>
+    <ellipse fill="none" ID="1005" rx="1.25" cx="452.5" Net="10002" ry="1.25" cy="170.0" stroke="#000000"/>
+    <rect function="switch" stroke="#000000" active="1" I2CPage="1" width="16.25" fill="none"
+        layout="horizontal" height="7.5" Bit="4" Net="30000, 30001" x="435.0" y="142.5" I2CRegister="35"
+        ActiveColor="0x00bb00bb"/>
+    <rect function="switch" stroke="#000000" active="1" I2CPage="1" width="16.25" fill="none"
+        layout="horizontal" height="7.5" Bit="5" Net="40000, 40001" x="435.0" y="182.5" I2CRegister="35"
+        ActiveColor="0x00bb00bb"/>
+    <rect function="switch" ID="2005" stroke="#000000" active="1" I2CPage="1" width="16.25" fill="none"
+        layout="horizontal" height="7.5" Bit="1" Net="30000, 30002" x="435.0" y="227.5" ActiveColor="0x00bb00bb"
+        I2CRegister="35"/>
+    <rect function="switch" ID="1005" stroke="#000000" I2CPage="1" width="16.25" fill="none" layout="horizontal"
+        height="7.5" Bit="7" attr_name="" Net="10002, 10100" x="435.0" y="345.0" I2CRegister="35"/>
+    <rect function="switch" ID="2006" stroke="#000000" I2CPage="1" width="16.25" fill="none" layout="horizontal"
+        height="7.5" Bit="3" Net="20002, 20100" x="435.0" y="390.0" I2CRegister="35" ActiveColor="0x00bbbb00"/>
+    <rect function="switch" ID="2004" stroke="#000000" I2CPage="1" width="16.25" fill="none" layout="horizontal"
+        height="7.5" Bit="2" Net="20002, 20003" x="435.0" y="207.5" ActiveColor="0x00bbbb00"
+        I2CRegister="35"/>
+    <text x="684.5" y="235.75"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="8"
+            xml:space="preserve">Digital</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="685.0" y="245.75"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">Audio</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="684.5" y="255.75"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">Processing</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="684.5" y="275.75"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">Serial</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="684.5" y="285.75"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">Interface</tspan><tspan xml:space="preserve"> </tspan></text>
+    <rect function="switch" stroke="#000000" active="1" I2CPage="0" width="16.25" fill="none"
+        layout="horizontal" height="7.5" Bit="4" Net="10000, 10001" x="651.25" y="162.54167"
+        I2CRegister="63"/>
+    <rect function="switch" stroke="#000000" active="1" I2CPage="0" width="16.25" fill="none"
+        layout="horizontal" height="7.5" Bit="2" Net="20000, 20001" x="651.25" y="207.54167"
+        ActiveColor="0x00bbbb00" I2CRegister="63"/>
+    <rect function="switch" stroke="#000000" active="1" I2CPage="0" width="16.25" fill="none"
+        layout="horizontal" height="7.5" Bit="3" Net="10000, 15000" x="651.25" y="177.54167"
+        I2CRegister="63"/>
+    <rect function="switch" stroke="#000000" active="1" I2CPage="0" width="16.25" fill="none"
+        layout="horizontal" height="7.5" Bit="5" Net="20000, 15001" x="651.25" y="192.54167"
+        ActiveColor="0x00bbbb00" I2CRegister="63"/>
+    <g active="1" Net="10000">
+        <line y2="170.0" fill="none" x1="680.0" x2="670.0" stroke="#000000" y1="170.0"/>
+        <ellipse fill="none" rx="1.25" cx="668.75" ry="1.25" cy="170.04167" stroke="#000000" active="1"/>
+        <ellipse fill="none" rx="1.25" cx="668.75" ry="1.25" cy="185.04167" stroke="#000000" active="1"/>
+        <line fill="none" x1="668.75" x2="668.75" y1="171.25" y2="183.75" stroke="#000000" active="1"/>
+    </g>
+    <g ActiveColor="0x00bbbb00" active="1" Net="20000">
+        <line ActiveColor="0x00bbbb00" fill="none" x1="680.0" x2="670.0" y1="215.0" y2="215.0"
+            stroke="#000000" active="1"/>
+        <ellipse ActiveColor="0x00bbbb00" fill="none" rx="1.25" cx="668.75" ry="1.25" cy="215.04167"
+            stroke="#000000" active="1"/>
+        <ellipse ActiveColor="0x00bbbb00" fill="none" rx="1.25" cx="668.75" ry="1.25" cy="200.04167"
+            stroke="#000000" active="1"/>
+        <line ActiveColor="0x00bbbb00" fill="none" x1="668.75" x2="668.75" y1="213.75" y2="201.25"
+            stroke="#000000" active="1"/>
+    </g>
+    <g Net="10001">
+        <ellipse fill="none" ID="1007" rx="1.25" cx="650.0" ry="1.25" cy="170.04167" stroke="#000000"/>
+        <line fill="none" x1="640.0" x2="648.75" y1="170.0" y2="170.0" ID="1007" stroke="#000000"/>
+    </g>
+    <g Net="15000">
+        <ellipse fill="none" ID="1008" rx="1.25" cx="650.0" ry="1.25" cy="185.04167" stroke="#000000"/>
+        <polyline ID="1008" fill="none" points="648.75,185.0 645.0,185.0 630.0,200.0 630.0,205.0"
+            stroke="#000000"/>
+    </g>
+    <g Net="15001">
+        <ellipse ActiveColor="0x00bbbb00" fill="none" ID="2008" rx="1.25" cx="650.0" ry="1.25" cy="200.04167"
+            stroke="#000000"/>
+        <polyline ActiveColor="0x00bbbb00" ID="2008" fill="none" points="648.75,200.0 645.0,200.0 
+            630.0,185.0 630.0,180.0" stroke="#000000"/>
+    </g>
+    <g Net="20001">
+        <ellipse ActiveColor="0x00bbbb00" fill="none" ID="2007" rx="1.25" cx="650.0" ry="1.25" cy="215.04167"
+            stroke="#000000"/>
+        <line ActiveColor="0x00bbbb00" fill="none" x1="640.0" x2="648.75" y1="215.0" ID="2007" y2="215.0"
+            stroke="#000000"/>
+    </g>
+    <g Net="10002">
+        <line fill="none" x1="620.0" x2="605.0" y1="170.0" ID="1006" y2="170.0" stroke="#000000"/>
+        <line fill="none" x1="580.0" x2="560.0" y1="170.0" y2="170.0" ID="1006" stroke="#000000"/>
+        <ellipse fill="none" ID="1005" rx="10.0" cx="550.0" ry="10.0" cy="170.0" stroke="#000000"/>
+        <line fill="none" x1="540.0" x2="527.5" y1="170.0" ID="1005" y2="170.0" stroke="#000000"/>
+        <polygon ID="1005" fill="none" points="497.5,170.0 507.5,160.0 527.5,160.0 527.5,180.0 
+            507.5,180.0" stroke="#000000"/>
+        <line fill="none" x1="497.5" x2="453.75" y1="170.0" ID="1005" y2="170.0" stroke="#000000"/>
+        <line fill="none" x1="482.5" x2="482.5" y1="170.0" ID="1005" y2="352.5" stroke="#000000"/>
+        <ellipse fill="none" ID="1005" rx="1.25" cx="452.5" ry="1.25" cy="352.5" stroke="#000000"/>
+        <line fill="none" x1="482.5" x2="453.75" y1="352.5" ID="1005" y2="352.5" stroke="#000000"/>
+    </g>
+    <rect x="580.0" y="157.5" fill="none" width="25.0" ID="1006" height="25.0" Net="10002" stroke="#000000"
+        function="DAC_L"/>
+    <g Net="20002">
+        <line ActiveColor="0x00bbbb00" fill="none" x1="620.0" x2="605.0" y1="215.0" ID="2006" y2="215.0"
+            stroke="#000000"/>
+        <line ActiveColor="0x00bbbb00" fill="none" x1="580.0" x2="560.0" y1="215.0" ID="2006" y2="215.0"
+            stroke="#000000"/>
+        <ellipse ActiveColor="0x00bbbb00" fill="none" ID="2006" rx="10.0" cx="550.0" ry="10.0" cy="215.0"
+            stroke="#000000"/>
+        <line ActiveColor="0x00bbbb00" fill="none" x1="540.0" x2="527.5" y1="215.0" ID="2006" y2="215.0"
+            stroke="#000000"/>
+        <polygon ActiveColor="0x00bbbb00" ID="2006" fill="none" points="497.5,215.0 507.5,205.0 
+            527.5,205.0 527.5,225.0 507.5,225.0" stroke="#000000"/>
+        <ellipse ActiveColor="0x00bbbb00" fill="none" ID="2006" rx="1.25" cx="452.5" cy="397.5" ry="1.25"
+            stroke="#000000"/>
+        <ellipse ActiveColor="0x00bbbb00" fill="none" ID="2006" rx="1.25" cx="492.5" ry="1.25" cy="215.0"
+            stroke="#000000"/>
+        <polyline ActiveColor="0x00bbbb00" ID="2006" fill="none" points="453.75,397.5 492.5,397.5 
+            492.5,215.0" stroke="#000000"/>
+        <line ActiveColor="0x00bbbb00" fill="none" x1="497.5" x2="453.75" y1="215.0" ID="2006" y2="215.0"
+            stroke="#000000"/>
+        <ellipse ActiveColor="0x00bbbb00" fill="none" ID="2006" rx="1.25" cx="452.5" ry="1.25" cy="215.0"
+            stroke="#000000"/>
+    </g>
+    <rect ActiveColor="0x00bbbb00" x="580.0" y="202.5" fill="none" width="25.0" ID="2006" height="25.0"
+        Net="20002" stroke="#000000" function="DAC_R"/>
+    <g Net="10003">
+        <line fill="none" x1="415.0" x2="432.5" y1="170.0" y2="170.0" ID="1003" stroke="#000000"/>
+        <ellipse fill="none" ID="1003" rx="1.25" cx="433.75" ry="1.25" cy="170.0" stroke="#000000"/>
+    </g>
+    <g ActiveColor="0x00bb00bb" active="1" Net="30000">
+        <ellipse ActiveColor="0x00bb00bb" fill="none" rx="1.25" cx="452.5" ry="1.25" cy="150.0"
+            stroke="#000000" active="1"/>
+        <line ActiveColor="0x00bb00bb" fill="none" x1="453.75" x2="471.25" y1="150.0" y2="150.0"
+            stroke="#000000" active="1"/>
+    </g>
+    <g ActiveColor="0x00bb00bb" Net="40000" active="1">
+        <ellipse ActiveColor="0x00bb00bb" fill="none" rx="1.25" cx="452.5" ry="1.25" cy="235.0"
+            stroke="#000000" active="1"/>
+        <line ActiveColor="0x00bb00bb" fill="none" x1="453.75" x2="472.5" y1="235.0" y2="235.0"
+            stroke="#000000" active="1"/>
+    </g>
+    <g ActiveColor="0x00bb00bb" active="1" Net="40000">
+        <ellipse ActiveColor="0x00bb00bb" fill="none" rx="1.25" cx="452.5" ry="1.25" cy="190.0"
+            stroke="#000000" active="1"/>
+        <line ActiveColor="0x00bb00bb" fill="none" x1="453.75" x2="472.5" y1="190.0" y2="190.0"
+            stroke="#000000" active="1"/>
+    </g>
+    <g Net="30001">
+        <polyline ActiveColor="0x00bb00bb" ID="1002" fill="none" points="432.5,150.0 425.0,150.0 
+            411.25,163.75" stroke="#000000"/>
+        <ellipse ActiveColor="0x00bb00bb" fill="none" ID="1002" rx="1.25" cx="433.75" cy="150.0" ry="1.25"
+            stroke="#000000"/>
+    </g>
+    <g Net="40001">
+        <polyline ID="1004" ActiveColor="0x00bb00bb" fill="none" points="432.5,190.0 425.0,190.0 
+            411.25,176.25" stroke="#000000"/>
+        <ellipse ActiveColor="0x00bb00bb" fill="none" ID="1004" rx="1.25" cx="433.75" cy="190.0" ry="1.25"
+            stroke="#000000"/>
+    </g>
+    <g Net="20003">
+        <ellipse ActiveColor="0x00bbbb00" fill="none" ID="2002" rx="1.25" cx="433.75" ry="1.25" cy="215.0"
+            stroke="#000000"/>
+        <line ActiveColor="0x00bbbb00" fill="none" x1="432.5" x2="415.0" y1="215.0" ID="2002" y2="215.0"
+            stroke="#000000"/>
+    </g>
+    <g Net="30001">
+        <polyline ActiveColor="0x00bb00bb" ID="2003" fill="none" points="432.5,235.0 425.0,235.0 
+            411.25,221.25" stroke="#000000"/>
+        <ellipse ActiveColor="0x00bb00bb" fill="none" ID="2003" rx="1.25" cx="433.75" ry="1.25" cy="235.0"
+            stroke="#000000"/>
+    </g>
+    <g Net="10004">
+        <line fill="none" x1="275.0" x2="200" y1="170.0" ID="1001" y2="170.0" stroke="#000000"/>
+        <line fill="none" x1="275.0" x2="255.0" y1="330.0" y2="330.0" ID="1001" stroke="#000000"/>
+        <line y2="155.0" fill="none" x1="287.5" x2="280.0" stroke="#000000" y1="162.5"/>
+        <line y2="335.0" fill="none" x1="307.5" x2="300.0" y1="342.5" stroke="#000000"/>
+        <polyline ID="1001" fill="none" points="300.0,330.0 365.0,330.0 365.0,170.0" stroke="#000000"/>
+        <line fill="none" x1="395.0" x2="300.0" y1="170.0" ID="1001" y2="170.0" stroke="#000000"/>
+        <ellipse fill="none" ID="1001" rx="1.25" cx="365.0" ry="1.25" cy="170.0" stroke="#000000"/>
+    </g>
+    <polygon function="amplifier" ID="1001" CustomGain="1" stroke="#000000" I2CPage="1" Mask="0x7F"
+        fill="none" TextLocation="18, 20" min="-78" step="0.61" points="300.0,155.0 300.0,185.0 
+        275.0,170.0" Shift="0" Net="10004" max="0" I2CRegister="38"/>
+    <polygon function="amplifier" ID="1001" CustomGain="1" stroke="#000000" I2CPage="1" Mask="0x7F"
+        fill="none" TextLocation="18, 20" min="-78" step="0.61" points="300.0,315.0 300.0,345.0 
+        275.0,330.0" Shift="0" Net="10004" max="0" I2CRegister="36"/>
+    <g Net="20004">
+        <line ActiveColor="0x00bbbb00" fill="none" x1="275.0" x2="255.0" y1="375.0" ID="2001" y2="375.0"
+            stroke="#000000"/>
+        <line y2="380.0" fill="none" x1="307.5" x2="300.0" y1="387.5" stroke="#000000"/>
+        <line ActiveColor="0x00bbbb00" fill="none" x1="395.0" x2="375.0" y1="215.0" ID="2001" y2="215.0"
+            stroke="#000000"/>
+        <polyline ActiveColor="0x00bbbb00" ID="2001" fill="none" points="300.0,375.0 375.0,375.0 
+            375.0,215.0" stroke="#000000"/>
+    </g>
+    <polygon function="amplifier" ID="2001" CustomGain="1" stroke="#000000" I2CPage="1" Mask="0x7F"
+        fill="none" TextLocation="18, 20" min="-78" step="0.61" points="300.0,360.0 300.0,390.0 
+        275.0,375.0" Shift="0" Net="20004" max="0" ActiveColor="0x00bbbb00" I2CRegister="37"/>
+    <g Net="10100">
+        <ellipse fill="none" ID="1100" rx="1.25" cx="433.75" ry="1.25" cy="352.5" stroke="#000000"/>
+        <polyline ID="1100" fill="none" points="432.5,352.5 250.0,352.5 250.0,335.0" stroke="#000000"/>
+    </g>
+    <g Net="20100">
+        <ellipse ActiveColor="0x00bbbb00" fill="none" ID="2100" rx="1.25" cx="433.75" cy="397.5" ry="1.25"
+            stroke="#000000"/>
+        <polyline ActiveColor="0x00bbbb00" ID="2100" fill="none" points="432.5,397.5 250.0,397.5 
+            250.0,380.0" stroke="#000000"/>
+    </g>
+    <g Net="10101">
+        <ellipse fill="none" ID="1101" rx="1.25" cx="58.75" ry="1.25" cy="330.0" stroke="#000000"/>
+        <line fill="none" x1="175.0" x2="60.0" y1="330.0" ID="1101" y2="330.0" stroke="#000000"/>
+        <line y2="335.0" fill="none" x1="207.5" x2="200.0" stroke="#000000" y1="342.5"/>
+        <line fill="none" x1="245.0" x2="200.0" y1="330.0" ID="1101" y2="330.0" stroke="#000000"/>
+    </g>
+    <polygon function="amplifier" ID="1101" stroke="#000000" I2CPage="1" Mask="0x78" fill="none"
+        TextLocation="18, 20" min="0" step="1" points="200.0,315.0 200.0,345.0 175.0,330.0" Shift="3"
+        Net="10101" max="9" I2CRegister="40"/>
+    <g Net="20101">
+        <line ActiveColor="0x00bbbb00" fill="none" x1="245.0" x2="200.0" y1="375.0" ID="2101" y2="375.0"
+            stroke="#000000"/>
+        <line y2="360.0" fill="none" x1="187.5" x2="180.0" y1="367.5" stroke="#000000"/>
+        <line ActiveColor="0x00bbbb00" fill="none" x1="175.0" x2="60.0" y1="375.0" ID="2101" y2="375.0"
+            stroke="#000000"/>
+        <ellipse ActiveColor="0x00bbbb00" fill="none" ID="2101" rx="1.25" cx="58.75" ry="1.25" cy="375.0"
+            stroke="#000000"/>
+    </g>
+    <polygon function="amplifier" ID="2101" stroke="#000000" I2CPage="1" Mask="0x78" fill="none"
+        TextLocation="18, 20" min="0" step="1" points="200.0,360.0 200.0,390.0 175.0,375.0" Shift="3"
+        Net="20101" max="9" ActiveColor="0x00bbbb00" I2CRegister="41"/>
+    <g Net="10004">
+        <line y2="175.0" fill="none" x1="207.5" x2="200.0" y1="182.5" stroke="#000000"/>
+        <line y2="155.0" fill="none" x1="187.5" x2="180.0" y1="162.5" stroke="#000000"/>
+        <ellipse fill="none" ID="1000" rx="1.6666666" cx="180.0" ry="1.6666666" cy="175.0" stroke="#000000"/>
+        <polyline ID="1000" fill="none" points="180.0,167.5 180.0,162.5 57.5,162.5" stroke="#000000"/>
+        <polyline ID="1000" fill="none" points="180.0,176.66667 180.0,177.5 57.5,177.5" stroke="#000000"/>
+        <ellipse fill="none" ID="1000" rx="1.25" cx="56.25" ry="1.25" cy="177.5" stroke="#000000"/>
+        <ellipse fill="none" ID="1000" rx="1.25" cx="56.25" ry="1.25" cy="162.5" stroke="#000000"/>
+    </g>
+    <polygon function="amplifier" ID="1000" stroke="#000000" I2CPage="1" Mask="0x18" fill="none"
+        TextLocation="18, 20" min="6" step="6" points="200.0,155.0 200.0,185.0 175.0,170.0" Shift="3"
+        Net="10005" max="24" I2CRegister="42"/>
+    <g Net="20005"/>
+    <line y2="490.0" fill="none" x1="60.0" x2="175.0" y1="490.0" stroke="#000000"/>
+    <polygon fill="none" points="175.0,490.0 187.5,482.5 187.5,497.5" stroke="#000000"/>
+    <line y2="490.0" fill="none" x1="250.0" x2="187.5" y1="490.0" stroke="#000000"/>
+    <text x="192.5" y="486.75"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">2V/2.5V/AVDD</tspan><tspan xml:space="preserve"> </tspan></text>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="58.75" cy="490.0" stroke="#000000"/>
+    <text x="19.5" file="TSC2117_MICBIAS.jpg" HintYOffset="0" y="492.41666"><tspan font-family="'Arial', 'Helvetica', sans-serif"
+            font-size="8" xml:space="preserve">MICBIAS</tspan><tspan xml:space="preserve"> </tspan></text>
+    <line y2="577.5" fill="none" x1="160.0" x2="157.5" y1="575.0" stroke="#000000"/>
+    <line y2="582.5" fill="none" x1="157.5" x2="162.5" y1="577.5" stroke="#000000"/>
+    <line y2="587.5" fill="none" x1="162.5" x2="157.5" y1="582.5" stroke="#000000"/>
+    <line y2="592.5" fill="none" x1="157.5" x2="162.5" y1="587.5" stroke="#000000"/>
+    <line y2="595.0" fill="none" x1="162.5" x2="160.0" y1="592.5" stroke="#000000"/>
+    <line y2="570.0" fill="none" x1="160.0" x2="160.0" y1="575.0" stroke="#000000"/>
+    <line y2="600.0" fill="none" x1="160.0" x2="160.0" y1="595.0" stroke="#000000"/>
+    <line y2="595.0" fill="none" x1="175.0" x2="172.5" stroke="#000000" y1="592.5"/>
+    <line y2="592.5" fill="none" x1="170.0" x2="175.0" stroke="#000000" y1="587.5"/>
+    <line y2="587.5" fill="none" x1="175.0" x2="170.0" stroke="#000000" y1="582.5"/>
+    <line y2="582.5" fill="none" x1="170.0" x2="175.0" stroke="#000000" y1="577.5"/>
+    <line y2="577.5" fill="none" x1="172.5" x2="170.0" stroke="#000000" y1="575.0"/>
+    <line y2="570.0" fill="none" x1="172.5" x2="172.5" y1="575.0" stroke="#000000"/>
+    <line y2="600.0" fill="none" x1="172.5" x2="172.5" y1="595.0" stroke="#000000"/>
+    <line y2="595.0" fill="none" x1="187.5" x2="185.0" stroke="#000000" y1="592.5"/>
+    <line y2="592.5" fill="none" x1="182.5" x2="187.5" stroke="#000000" y1="587.5"/>
+    <line y2="587.5" fill="none" x1="187.5" x2="182.5" stroke="#000000" y1="582.5"/>
+    <line y2="582.5" fill="none" x1="182.5" x2="187.5" stroke="#000000" y1="577.5"/>
+    <line y2="577.5" fill="none" x1="185.0" x2="182.5" stroke="#000000" y1="575.0"/>
+    <line y2="570.0" fill="none" x1="185.0" x2="185.0" y1="575.0" stroke="#000000"/>
+    <line y2="600.0" fill="none" x1="185.0" x2="185.0" y1="595.0" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="160.0" cy="568.75" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="172.5" cy="568.75" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="185.0" cy="568.75" stroke="#000000"/>
+    <line y2="600.0" fill="none" x1="160.0" x2="185.0" y1="600.0" stroke="#000000"/>
+    <line y2="608.75" fill="none" x1="172.45833" x2="172.45833" y1="600.0" stroke="#000000"/>
+    <line y2="608.75" fill="none" x1="168.70833" x2="176.20833" y1="608.75" stroke="#000000"/>
+    <line y2="610.0" fill="none" x1="169.95833" x2="174.95833" y1="610.0" stroke="#000000"/>
+    <line y2="611.25" fill="none" x1="171.20833" x2="173.70833" y1="611.25" stroke="#000000"/>
+    <line y2="610.0" fill="none" x1="169.95833" x2="174.95833" stroke="#000000" y1="610.0"/>
+    <line y2="611.25" fill="none" x1="171.20833" x2="173.70833" stroke="#000000" y1="611.25"/>
+    <line y2="608.75" fill="none" x1="168.70833" x2="176.20833" stroke="#000000" y1="608.75"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="172.5" cy="600.0" stroke="#000000"/>
+    <text x="154.25" y="619.25"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">10k</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="169.25" y="619.25"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="6"
+            xml:space="preserve">20k</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="184.25" y="619.25"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="6"
+            xml:space="preserve">40k</tspan><tspan xml:space="preserve"> </tspan></text>
+    <line y2="657.5" fill="none" x1="160.0" x2="157.5" stroke="#000000" y1="655.0"/>
+    <line y2="662.5" fill="none" x1="157.5" x2="162.5" stroke="#000000" y1="657.5"/>
+    <line y2="667.5" fill="none" x1="162.5" x2="157.5" stroke="#000000" y1="662.5"/>
+    <line y2="672.5" fill="none" x1="157.5" x2="162.5" stroke="#000000" y1="667.5"/>
+    <line y2="675.0" fill="none" x1="162.5" x2="160.0" stroke="#000000" y1="672.5"/>
+    <line y2="650.0" fill="none" x1="160.0" x2="160.0" stroke="#000000" y1="655.0"/>
+    <line y2="680.0" fill="none" x1="160.0" x2="160.0" stroke="#000000" y1="675.0"/>
+    <line y2="675.0" fill="none" x1="175.0" x2="172.5" y1="672.5" stroke="#000000"/>
+    <line y2="672.5" fill="none" x1="170.0" x2="175.0" y1="667.5" stroke="#000000"/>
+    <line y2="667.5" fill="none" x1="175.0" x2="170.0" y1="662.5" stroke="#000000"/>
+    <line y2="662.5" fill="none" x1="170.0" x2="175.0" y1="657.5" stroke="#000000"/>
+    <line y2="657.5" fill="none" x1="172.5" x2="170.0" y1="655.0" stroke="#000000"/>
+    <line y2="650.0" fill="none" x1="172.5" x2="172.5" stroke="#000000" y1="655.0"/>
+    <line y2="680.0" fill="none" x1="172.5" x2="172.5" stroke="#000000" y1="675.0"/>
+    <line y2="675.0" fill="none" x1="187.5" x2="185.0" y1="672.5" stroke="#000000"/>
+    <line y2="672.5" fill="none" x1="182.5" x2="187.5" y1="667.5" stroke="#000000"/>
+    <line y2="667.5" fill="none" x1="187.5" x2="182.5" y1="662.5" stroke="#000000"/>
+    <line y2="662.5" fill="none" x1="182.5" x2="187.5" y1="657.5" stroke="#000000"/>
+    <line y2="657.5" fill="none" x1="185.0" x2="182.5" y1="655.0" stroke="#000000"/>
+    <line y2="650.0" fill="none" x1="185.0" x2="185.0" stroke="#000000" y1="655.0"/>
+    <line y2="680.0" fill="none" x1="185.0" x2="185.0" stroke="#000000" y1="675.0"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="160.0" cy="648.75" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="172.5" cy="648.75" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="185.0" cy="648.75" stroke="#000000"/>
+    <line y2="680.0" fill="none" x1="160.0" x2="185.0" stroke="#000000" y1="680.0"/>
+    <line y2="688.75" fill="none" x1="172.45833" x2="172.45833" stroke="#000000" y1="680.0"/>
+    <line y2="688.75" fill="none" x1="168.70833" x2="176.20833" stroke="#000000" y1="688.75"/>
+    <line y2="690.0" fill="none" x1="169.95833" x2="174.95833" stroke="#000000" y1="690.0"/>
+    <line y2="691.25" fill="none" x1="171.20833" x2="173.70833" stroke="#000000" y1="691.25"/>
+    <line y2="690.0" fill="none" x1="169.95833" x2="174.95833" y1="690.0" stroke="#000000"/>
+    <line y2="691.25" fill="none" x1="171.20833" x2="173.70833" y1="691.25" stroke="#000000"/>
+    <line y2="688.75" fill="none" x1="168.70833" x2="176.20833" y1="688.75" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="172.5" cy="680.0" stroke="#000000"/>
+    <text x="154.25" y="699.25"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="6"
+            xml:space="preserve">10k</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="169.25" y="699.25"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">20k</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="184.25" y="699.25"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">40k</tspan><tspan xml:space="preserve"> </tspan></text>
+    <line y2="737.5" fill="none" x1="160.0" x2="157.5" stroke="#000000" y1="735.0"/>
+    <line y2="742.5" fill="none" x1="157.5" x2="162.5" stroke="#000000" y1="737.5"/>
+    <line y2="747.5" fill="none" x1="162.5" x2="157.5" stroke="#000000" y1="742.5"/>
+    <line y2="752.5" fill="none" x1="157.5" x2="162.5" stroke="#000000" y1="747.5"/>
+    <line y2="755.0" fill="none" x1="162.5" x2="160.0" stroke="#000000" y1="752.5"/>
+    <line y2="730.0" fill="none" x1="160.0" x2="160.0" stroke="#000000" y1="735.0"/>
+    <line y2="760.0" fill="none" x1="160.0" x2="160.0" stroke="#000000" y1="755.0"/>
+    <line y2="755.0" fill="none" x1="175.0" x2="172.5" y1="752.5" stroke="#000000"/>
+    <line y2="752.5" fill="none" x1="170.0" x2="175.0" y1="747.5" stroke="#000000"/>
+    <line y2="747.5" fill="none" x1="175.0" x2="170.0" y1="742.5" stroke="#000000"/>
+    <line y2="742.5" fill="none" x1="170.0" x2="175.0" y1="737.5" stroke="#000000"/>
+    <line y2="737.5" fill="none" x1="172.5" x2="170.0" y1="735.0" stroke="#000000"/>
+    <line y2="730.0" fill="none" x1="172.5" x2="172.5" stroke="#000000" y1="735.0"/>
+    <line y2="760.0" fill="none" x1="172.5" x2="172.5" stroke="#000000" y1="755.0"/>
+    <line y2="755.0" fill="none" x1="187.5" x2="185.0" y1="752.5" stroke="#000000"/>
+    <line y2="752.5" fill="none" x1="182.5" x2="187.5" y1="747.5" stroke="#000000"/>
+    <line y2="747.5" fill="none" x1="187.5" x2="182.5" y1="742.5" stroke="#000000"/>
+    <line y2="742.5" fill="none" x1="182.5" x2="187.5" y1="737.5" stroke="#000000"/>
+    <line y2="737.5" fill="none" x1="185.0" x2="182.5" y1="735.0" stroke="#000000"/>
+    <line y2="730.0" fill="none" x1="185.0" x2="185.0" stroke="#000000" y1="735.0"/>
+    <line y2="760.0" fill="none" x1="185.0" x2="185.0" stroke="#000000" y1="755.0"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="160.0" cy="728.75" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="172.5" cy="728.75" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="185.0" cy="728.75" stroke="#000000"/>
+    <line y2="760.0" fill="none" x1="160.0" x2="185.0" stroke="#000000" y1="760.0"/>
+    <line y2="768.75" fill="none" x1="172.45833" x2="172.45833" stroke="#000000" y1="760.0"/>
+    <line y2="768.75" fill="none" x1="168.70833" x2="176.20833" stroke="#000000" y1="768.75"/>
+    <line y2="770.0" fill="none" x1="169.95833" x2="174.95833" stroke="#000000" y1="770.0"/>
+    <line y2="771.25" fill="none" x1="171.20833" x2="173.70833" stroke="#000000" y1="771.25"/>
+    <line y2="770.0" fill="none" x1="169.95833" x2="174.95833" y1="770.0" stroke="#000000"/>
+    <line y2="771.25" fill="none" x1="171.20833" x2="173.70833" y1="771.25" stroke="#000000"/>
+    <line y2="768.75" fill="none" x1="168.70833" x2="176.20833" y1="768.75" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="172.5" cy="760.0" stroke="#000000"/>
+    <text x="169.25" y="779.25"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">20k</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="184.25" y="779.25"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">40k</tspan><tspan xml:space="preserve"> </tspan></text>
+    <line y2="817.5" fill="none" x1="160.0" x2="157.5" stroke="#000000" y1="815.0"/>
+    <line y2="822.5" fill="none" x1="157.5" x2="162.5" stroke="#000000" y1="817.5"/>
+    <line y2="827.5" fill="none" x1="162.5" x2="157.5" stroke="#000000" y1="822.5"/>
+    <line y2="832.5" fill="none" x1="157.5" x2="162.5" stroke="#000000" y1="827.5"/>
+    <line y2="835.0" fill="none" x1="162.5" x2="160.0" stroke="#000000" y1="832.5"/>
+    <line y2="810.0" fill="none" x1="160.0" x2="160.0" stroke="#000000" y1="815.0"/>
+    <line y2="840.0" fill="none" x1="160.0" x2="160.0" stroke="#000000" y1="835.0"/>
+    <line y2="835.0" fill="none" x1="175.0" x2="172.5" y1="832.5" stroke="#000000"/>
+    <line y2="832.5" fill="none" x1="170.0" x2="175.0" y1="827.5" stroke="#000000"/>
+    <line y2="827.5" fill="none" x1="175.0" x2="170.0" y1="822.5" stroke="#000000"/>
+    <line y2="822.5" fill="none" x1="170.0" x2="175.0" y1="817.5" stroke="#000000"/>
+    <line y2="817.5" fill="none" x1="172.5" x2="170.0" y1="815.0" stroke="#000000"/>
+    <line y2="810.0" fill="none" x1="172.5" x2="172.5" stroke="#000000" y1="815.0"/>
+    <line y2="840.0" fill="none" x1="172.5" x2="172.5" stroke="#000000" y1="835.0"/>
+    <line y2="835.0" fill="none" x1="187.5" x2="185.0" y1="832.5" stroke="#000000"/>
+    <line y2="832.5" fill="none" x1="182.5" x2="187.5" y1="827.5" stroke="#000000"/>
+    <line y2="827.5" fill="none" x1="187.5" x2="182.5" y1="822.5" stroke="#000000"/>
+    <line y2="822.5" fill="none" x1="182.5" x2="187.5" y1="817.5" stroke="#000000"/>
+    <line y2="817.5" fill="none" x1="185.0" x2="182.5" y1="815.0" stroke="#000000"/>
+    <line y2="810.0" fill="none" x1="185.0" x2="185.0" stroke="#000000" y1="815.0"/>
+    <line y2="840.0" fill="none" x1="185.0" x2="185.0" stroke="#000000" y1="835.0"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="160.0" cy="808.75" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="172.5" cy="808.75" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="185.0" cy="808.75" stroke="#000000"/>
+    <line y2="840.0" fill="none" x1="160.0" x2="185.0" stroke="#000000" y1="840.0"/>
+    <line y2="848.75" fill="none" x1="172.45833" x2="172.45833" stroke="#000000" y1="840.0"/>
+    <line y2="848.75" fill="none" x1="168.70833" x2="176.20833" stroke="#000000" y1="848.75"/>
+    <line y2="850.0" fill="none" x1="169.95833" x2="174.95833" stroke="#000000" y1="850.0"/>
+    <line y2="851.25" fill="none" x1="171.20833" x2="173.70833" stroke="#000000" y1="851.25"/>
+    <line y2="850.0" fill="none" x1="169.95833" x2="174.95833" y1="850.0" stroke="#000000"/>
+    <line y2="851.25" fill="none" x1="171.20833" x2="173.70833" y1="851.25" stroke="#000000"/>
+    <line y2="848.75" fill="none" x1="168.70833" x2="176.20833" y1="848.75" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="172.5" cy="840.0" stroke="#000000"/>
+    <text x="154.25" y="859.25"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="6"
+            xml:space="preserve">10k</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="169.25" y="859.25"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">20k</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="184.25" y="859.25"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">40k</tspan><tspan xml:space="preserve"> </tspan></text>
+    <line y2="902.5" fill="none" x1="160.0" x2="157.5" stroke="#000000" y1="900.0"/>
+    <line y2="907.5" fill="none" x1="157.5" x2="162.5" stroke="#000000" y1="902.5"/>
+    <line y2="912.5" fill="none" x1="162.5" x2="157.5" stroke="#000000" y1="907.5"/>
+    <line y2="917.5" fill="none" x1="157.5" x2="162.5" stroke="#000000" y1="912.5"/>
+    <line y2="920.0" fill="none" x1="162.5" x2="160.0" stroke="#000000" y1="917.5"/>
+    <line y2="895.0" fill="none" x1="160.0" x2="160.0" stroke="#000000" y1="900.0"/>
+    <line y2="925.0" fill="none" x1="160.0" x2="160.0" stroke="#000000" y1="920.0"/>
+    <line y2="920.0" fill="none" x1="175.0" x2="172.5" y1="917.5" stroke="#000000"/>
+    <line y2="917.5" fill="none" x1="170.0" x2="175.0" y1="912.5" stroke="#000000"/>
+    <line y2="912.5" fill="none" x1="175.0" x2="170.0" y1="907.5" stroke="#000000"/>
+    <line y2="907.5" fill="none" x1="170.0" x2="175.0" y1="902.5" stroke="#000000"/>
+    <line y2="902.5" fill="none" x1="172.5" x2="170.0" y1="900.0" stroke="#000000"/>
+    <line y2="895.0" fill="none" x1="172.5" x2="172.5" stroke="#000000" y1="900.0"/>
+    <line y2="925.0" fill="none" x1="172.5" x2="172.5" stroke="#000000" y1="920.0"/>
+    <line y2="920.0" fill="none" x1="187.5" x2="185.0" y1="917.5" stroke="#000000"/>
+    <line y2="917.5" fill="none" x1="182.5" x2="187.5" y1="912.5" stroke="#000000"/>
+    <line y2="912.5" fill="none" x1="187.5" x2="182.5" y1="907.5" stroke="#000000"/>
+    <line y2="907.5" fill="none" x1="182.5" x2="187.5" y1="902.5" stroke="#000000"/>
+    <line y2="902.5" fill="none" x1="185.0" x2="182.5" y1="900.0" stroke="#000000"/>
+    <line y2="895.0" fill="none" x1="185.0" x2="185.0" stroke="#000000" y1="900.0"/>
+    <line y2="925.0" fill="none" x1="185.0" x2="185.0" stroke="#000000" y1="920.0"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="160.0" cy="893.75" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="172.5" cy="893.75" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="185.0" cy="893.75" stroke="#000000"/>
+    <line y2="925.0" fill="none" x1="160.0" x2="185.0" stroke="#000000" y1="925.0"/>
+    <line y2="933.75" fill="none" x1="172.45831" x2="172.45831" stroke="#000000" y1="925.0"/>
+    <line y2="933.75" fill="none" x1="168.70831" x2="176.20831" stroke="#000000" y1="933.75"/>
+    <line y2="935.0" fill="none" x1="169.95831" x2="174.95831" stroke="#000000" y1="935.0"/>
+    <line y2="936.25" fill="none" x1="171.20831" x2="173.70831" stroke="#000000" y1="936.25"/>
+    <line y2="935.0" fill="none" x1="169.95831" x2="174.95831" y1="935.0" stroke="#000000"/>
+    <line y2="936.25" fill="none" x1="171.20831" x2="173.70831" y1="936.25" stroke="#000000"/>
+    <line y2="933.75" fill="none" x1="168.70831" x2="176.20831" y1="933.75" stroke="#000000"/>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="172.5" cy="925.0" stroke="#000000"/>
+    <text x="154.25" y="944.25"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="6"
+            xml:space="preserve">10k</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="169.25" y="944.25"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">20k</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="184.25" y="944.25"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">40k</tspan><tspan xml:space="preserve"> </tspan></text>
+    <ellipse fill="none" ID="600000" rx="10.0" cx="277.5" ry="10.0" Net="31000, 51000, 41000, 70000"
+        cy="627.4167" stroke="#000000" function="mixer"/>
+    <polyline ID="600000" ActiveColor="0x00bb00bb" fill="none" points="281.0,622.0 274.0,622.0 
+        280.0,627.0 274.0,632.0 281.0,632.0" stroke="#000000"/>
+    <ellipse fill="none" rx="10.0" cx="277.5" Net="51001, 61000, 80000" ry="10.0" cy="829.9167"
+        stroke="#000000" function="mixer"/>
+    <polyline ID="450000" ActiveColor="0x00bb00bb" fill="none" points="282.0,825.0 274.0,825.0 
+        280.0,830.0 274.0,835.0 282.0,835.0" stroke="#000000"/>
+    <line y2="645.0" fill="none" x1="325.0" x2="327.5" stroke="#000000" y1="655.0"/>
+    <polygon function="amplifier" ID="600001" stroke="#000000" I2CPage="1" Mask="0x7F" fill="none"
+        TextLocation="18, -20" min="0" step="0.5" points="320.0,620.0 320.0,650.0 345.0,635.0"
+        Shift="0" max="59.5" ActiveColor="0x00bb00bb" I2CRegister="47"/>
+    <line y2="617.5" fill="none" x1="332.5" x2="335.0" stroke="#000000" y1="627.5"/>
+    <line fill="none" x1="287.5" x2="320.0" y1="627.5" y2="627.5" ID="600000" Net="70000" stroke="#000000"/>
+    <text x="322.25" y="631.0"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">+</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="322.25" y="643.5"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="6"
+            xml:space="preserve">-</tspan><tspan xml:space="preserve"> </tspan></text>
+    <polyline ID="450000" fill="none" Net="80000" points="320.0,642.5 305.0,642.5 305.0,830.0 
+        287.5,830.0" stroke="#000000"/>
+    <polygon ID="600001" ActiveColor="0x00bb00bb" fill="none" points="367.0,635.0 377.0,625.0 
+        397.0,625.0 397.0,645.0 377.0,645.0" stroke="#000000"/>
+    <text x="376.91666" y="638.1667"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">ADC</tspan><tspan xml:space="preserve"> </tspan></text>
+    <line ActiveColor="0x00bb00bb" fill="none" x1="345.0" x2="367.5" y1="635.0" y2="635.0" ID="600001"
+        stroke="#000000"/>
+    <rect ActiveColor="0x00bb00bb" x="345.0" y="657.5" fill="none" width="22.5" height="17.5"
+        stroke="#000000" function="AGC"/>
+    <text x="347.41666" y="668.4167"><tspan font-family="'Arial', 'Helvetica', sans-serif"
+            font-size="8" xml:space="preserve">AGC</tspan><tspan xml:space="preserve"> </tspan></text>
+    <line y2="667.5" fill="none" x1="345.0" x2="332.5" stroke="#000000" y1="667.5"/>
+    <line y2="642.5" fill="none" x1="332.5" x2="332.5" stroke="#000000" y1="667.5"/>
+    <rect ActiveColor="0x00bb00bb" x="417.5" y="622.5" fill="none" width="25.0" ID="600001" height="25.0"
+        stroke="#000000"/>
+    <text x="422.0" y="638.25"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="8"
+            xml:space="preserve">DSP</tspan><tspan xml:space="preserve"> </tspan></text>
+    <line ActiveColor="0x00bb00bb" fill="none" x1="397.5" x2="417.5" y1="635.0" y2="635.0" ID="600001"
+        stroke="#000000"/>
+    <line ActiveColor="0x00bb00bb" fill="none" x1="442.5" x2="680.0" y1="635.0" y2="635.0" ID="600001"
+        stroke="#000000"/>
+    <ellipse ActiveColor="0x00bb00bb" fill="none" ID="600001" rx="1.25" cx="465.0" ry="1.25" cy="635.0"
+        stroke="#000000"/>
+    <line ActiveColor="0x00bb00bb" fill="none" x1="465.0" x2="465.0" y1="635.0" y2="667.5" ID="600001"
+        stroke="#000000"/>
+    <line ActiveColor="0x00bb00bb" fill="none" x1="465.0" x2="367.5" y1="667.5" y2="667.5" ID="600001"
+        stroke="#000000"/>
+    <text x="19.583332" y="550.7083"><tspan font-family="'Arial', 'Helvetica', sans-serif"
+            font-size="8" xml:space="preserve">MIC1LP</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="108.75" y="870.625"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">VCOM</tspan><tspan xml:space="preserve"> </tspan></text>
+    <ellipse rx="1.25" fill="none" ry="1.25" cx="160.0" cy="893.75" stroke="#000000"/>
+    <text x="19.5" y="706.0834"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="8"
+            xml:space="preserve">MIC1RP</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="19.5" y="625.75"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">MIC1LM</tspan><tspan xml:space="preserve"> </tspan></text>
+    <rect function="switch" stroke="#000000" active="1" I2CPage="1" transform="matrix(-1.0 0.0 0.0 1.0 278.75 0.0)"
+        width="16.25" fill="none" LinkTo="500001" layout="horizontal" height="7.5" Bit="6" Net="60000, 61000"
+        x="131.25" y="865.0" ActiveColor="0x00bb00bb" I2CRegister="49"/>
+    <rect function="switch" stroke="#000000" active="1" I2CPage="1" transform="matrix(-1.0 0.0 0.0 1.0 278.75 0.0)"
+        width="16.25" fill="none" LinkTo="400001" layout="horizontal" height="7.5" Bit="4" Net="50000, 51001"
+        x="131.25" y="780.0" ActiveColor="0x00bb00bb" I2CRegister="49"/>
+    <rect function="switch" stroke="#000000" active="1" I2CPage="1" transform="matrix(-1.0 0.0 0.0 1.0 278.75 0.0)"
+        width="16.25" fill="none" LinkTo="300001" layout="horizontal" height="7.5" Bit="4" Net="40000, 41000"
+        x="131.25" y="700.0" ActiveColor="0x00bb00bb" I2CRegister="48"/>
+    <rect function="switch" stroke="#000000" active="1" I2CPage="1" transform="matrix(-1.0 0.0 0.0 1.0 278.75 0.0)"
+        width="16.25" fill="none" LinkTo="200001" layout="horizontal" height="7.5" Bit="2" Net="50000, 51000"
+        x="131.25" y="620.0" ActiveColor="0x00bb00bb" I2CRegister="48"/>
+    <rect function="switch" stroke="#000000" I2CPage="1" transform="matrix(-1.0 0.0 0.0 1.0 278.75 0.0)"
+        width="16.25" fill="none" layout="horizontal" height="7.5" Bit="6" Net="30000, 31000" x="131.25"
+        y="540.0" I2CRegister="48"/>
+    <text x="154.375" y="779.25"><tspan font-size="6" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">10k</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="507.0" y="173.25"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="8"
+            xml:space="preserve">DAC</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="507.0" y="218.25"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">DAC</tspan><tspan xml:space="preserve"> </tspan></text>
+    <polyline ID="1005" fill="none" points="553.75,165.0 546.25,165.0 552.5,170.0 546.25,175.0 
+        553.75,175.0" stroke="#000000"/>
+    <polyline ActiveColor="0x00bbbb00" ID="2006" fill="none" points="553.75,210.0 546.25,210.0 
+        552.5,215.0 546.25,220.0 553.75,220.0" stroke="#000000"/>
+    <polyline ActiveColor="0x00bbbb00" ID="2001" fill="none" points="408.75,210.0 401.25,210.0 
+        407.5,215.0 401.25,220.0 408.75,220.0" stroke="#000000"/>
+    <polyline ID="1006" fill="none" points="633.75,165.0 626.25,165.0 632.5,170.0 626.25,175.0 
+        633.75,175.0" stroke="#000000"/>
+    <polyline ActiveColor="0x00bbbb00" ID="2006" fill="none" points="633.75,210.0 626.25,210.0 
+        632.5,215.0 626.25,220.0 633.75,220.0" stroke="#000000"/>
+    <polyline ID="1001" fill="none" points="409.08334,165.0 401.58334,165.0 407.83334,170.0 
+        401.58334,175.0 409.08334,175.0" stroke="#000000"/>
+    <text x="584.5" y="173.25"><tspan font-size="8" font-family="'Arial', 'Helvetica', sans-serif"
+            xml:space="preserve">DVol</tspan><tspan xml:space="preserve"> </tspan></text>
+    <text x="584.5" y="218.25"><tspan font-family="'Arial', 'Helvetica', sans-serif" font-size="8"
+            xml:space="preserve">DVol</tspan><tspan xml:space="preserve"> </tspan></text>
+    <g ActiveColor="0x00bb00bb" active="1" Net="30000">
+        <ellipse ActiveColor="0x00bb00bb" fill="none" rx="1.25" cx="58.75" ry="1.25" cy="547.5"
+            stroke="#000000" active="1"/>
+        <line ActiveColor="0x00bb00bb" fill="none" x1="60.0" x2="128.75" y1="547.5" y2="547.5"
+            stroke="#000000" active="1"/>
+        <ellipse ActiveColor="0x00bb00bb" fill="none" rx="1.25" cx="130.0" ry="1.25" cy="547.5"
+            stroke="#000000" active="1"/>
+    </g>
+    <g ActiveColor="0x00bb00bb" active="1" Net="40000">
+        <ellipse ActiveColor="0x00bb00bb" fill="none" rx="1.25" cx="130.0" ry="1.25" cy="707.5"
+            stroke="#000000" active="1"/>
+        <ellipse rx="1.25" fill="none" ry="1.25" cx="58.75" cy="707.5" stroke="#000000"/>
+        <line y2="707.5" fill="none" x1="60.0" x2="128.75" stroke="#000000" y1="707.5"/>
+    </g>
+    <g ActiveColor="0x00bb00bb" active="1" Net="50000">
+        <ellipse ActiveColor="0x00bb00bb" fill="none" rx="1.25" cx="130.0" ry="1.25" cy="787.5"
+            stroke="#000000" active="1"/>
+        <line ActiveColor="0x00bb00bb" fill="none" x1="90.0" x2="128.75" y1="787.5" y2="787.5"
+            stroke="#000000" active="1"/>
+        <ellipse ActiveColor="0x00bb00bb" fill="none" rx="1.25" cx="90.0" ry="1.25" cy="627.5"
+            stroke="#000000" active="1"/>
+        <ellipse ActiveColor="0x00bb00bb" fill="none" rx="1.25" cx="130.0" ry="1.25" cy="627.5"
+            stroke="#000000" active="1"/>
+        <ellipse rx="1.25" fill="none" ry="1.25" cx="58.75" cy="627.5" stroke="#000000"/>
+        <line y2="627.5" fill="none" x1="60.0" x2="128.75" stroke="#000000" y1="627.5"/>
+        <line ActiveColor="0x00bb00bb" fill="none" x1="90.0" x2="90.0" y1="627.5" y2="787.5" stroke="#000000"
+            active="1"/>
+    </g>
+    <g Net="31000">
+        <ellipse ActiveColor="0x00bb00bb" fill="none" ID="100001" rx="1.25" cx="172.5" ry="1.25" cy="547.5"
+            stroke="#000000"/>
+        <line ActiveColor="0x00bb00bb" fill="none" x1="150.0" x2="217.5" y1="547.5" y2="547.5" ID="100001"
+            stroke="#000000"/>
+        <polygon ActiveColor="0x00bb00bb" ID="100001" fill="none" points="217.5,562.5 217.5,532.5 
+            242.5,547.5" stroke="#000000"/>
+        <rect function="impedance_select" ID="100001" stroke="#000000" I2CPage="1" width="25.0"
+            Mask="0xC0" fill="none" LinkTo="100000" height="18.75" Shift="6" x="160.0" y="548.75"
+            ActiveColor="0x00bb00bb" I2CRegister="48"/>
+        <polyline ID="100001" ActiveColor="0x00bb00bb" fill="none" LinkTo="600000" points=
+            "242.5,547.5 277.5,547.5 277.5,617.5" stroke="#000000"/>
+        <ellipse ActiveColor="0x00bb00bb" fill="none" ID="100001" rx="1.25" cx="148.75" ry="1.25"
+            cy="547.5" stroke="#000000"/>
+    </g>
+    <g Net="51000">
+        <ellipse ActiveColor="0x00bb00bb" fill="none" ID="200001" rx="1.25" cx="172.5" ry="1.25" cy="627.5"
+            stroke="#000000"/>
+        <line ActiveColor="0x00bb00bb" fill="none" x1="150.0" x2="217.5" y1="627.5" y2="627.5" ID="200001"
+            stroke="#000000"/>
+        <polygon ID="200001" ActiveColor="0x00bb00bb" fill="none" points="217.5,642.5 217.5,612.5 
+            242.5,627.5" stroke="#000000"/>
+        <rect function="impedance_select" ID="200001" stroke="#000000" I2CPage="1" width="25.0"
+            Mask="0x0C" fill="none" LinkTo="200000" height="18.75" Shift="2" x="160.0" y="628.75"
+            ActiveColor="0x00bb00bb" I2CRegister="48"/>
+        <line ActiveColor="0x00bb00bb" LinkTo="600000" fill="none" x1="242.5" x2="267.5" y1="627.5"
+            y2="627.5" ID="200001" stroke="#000000"/>
+        <ellipse ActiveColor="0x00bb00bb" fill="none" ID="200001" rx="1.25" cx="148.75" ry="1.25"
+            cy="627.5" stroke="#000000"/>
+    </g>
+    <g Net="41000">
+        <ellipse ActiveColor="0x00bb00bb" fill="none" ID="300001" rx="1.25" cx="172.5" ry="1.25" cy="707.5"
+            stroke="#000000"/>
+        <line ActiveColor="0x00bb00bb" fill="none" x1="150.0" x2="217.5" y1="707.5" y2="707.5" ID="300001"
+            stroke="#000000"/>
+        <polygon ID="300001" ActiveColor="0x00bb00bb" fill="none" points="217.5,722.5 217.5,692.5 
+            242.5,707.5" stroke="#000000"/>
+        <rect function="impedance_select" ID="300001" stroke="#000000" I2CPage="1" width="25.0"
+            Mask="0x30" fill="none" LinkTo="300000" height="18.75" Shift="4" x="160.0" y="708.75"
+            ActiveColor="0x00bb00bb" I2CRegister="48"/>
+        <polyline ID="300001" ActiveColor="0x00bb00bb" fill="none" LinkTo="600000" points=
+            "242.5,707.5 277.5,707.5 277.5,637.5" stroke="#000000"/>
+        <ellipse ActiveColor="0x00bb00bb" fill="none" ID="300001" rx="1.25" cx="148.75" ry="1.25"
+            cy="707.5" stroke="#000000"/>
+    </g>
+    <g Net="51001">
+        <ellipse rx="1.25" fill="none" ry="1.25" cx="172.5" cy="787.5" stroke="#000000"/>
+        <line fill="none" x1="150.0" x2="217.5" y1="787.5" y2="787.5" ID="400001" stroke="#000000"/>
+        <polygon ID="400001" fill="none" points="217.5,802.5 217.5,772.5 242.5,787.5" stroke="#000000"/>
+        <rect x="160.0" Shift="4" y="788.75" I2CPage="1" fill="none" width="25.0" Mask="0x30"
+            I2CRegister="49" height="18.75" stroke="#000000" function="impedance_select"/>
+        <polyline fill="none" points="242.5,787.5 277.5,787.5 277.5,820.0" stroke="#000000"/>
+        <ellipse ActiveColor="0x00bb00bb" fill="none" ID="400001" rx="1.25" cx="148.75" ry="1.25"
+            cy="787.5" stroke="#000000"/>
+    </g>
+    <g ActiveColor="0x00bb00bb" active="1" Net="60000">
+        <ellipse ActiveColor="0x00bb00bb" fill="none" rx="1.25" cx="130.0" ry="1.25" cy="872.5"
+            stroke="#000000" active="1"/>
+        <line ActiveColor="0x00bb00bb" fill="none" x1="113.75" x2="128.75" y1="872.5" y2="872.5"
+            stroke="#000000" active="1"/>
+    </g>
+    <g Net="61000">
+        <ellipse rx="1.25" fill="none" ry="1.25" cx="172.5" cy="872.5" stroke="#000000"/>
+        <line y2="872.5" fill="none" x1="150.0" x2="217.5" y1="872.5" stroke="#000000"/>
+        <polygon fill="none" points="217.5,887.5 217.5,857.5 242.5,872.5" stroke="#000000"/>
+        <rect x="160.0" Shift="6" y="873.75" I2CPage="1" fill="none" width="25.0" Mask="0xC0"
+            I2CRegister="49" height="18.75" stroke="#000000" function="impedance_select"/>
+        <polyline fill="none" points="242.5,872.5 277.5,872.5 277.5,840.0" stroke="#000000"/>
+        <ellipse rx="1.25" fill="none" ry="1.25" cx="148.75" cy="872.5" stroke="#000000"/>
+    </g>
+</svg>

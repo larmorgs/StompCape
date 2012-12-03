@@ -1,0 +1,40 @@
+#			--------------------------------------------------------------- page 0 is selected 
+w 30 00 00
+#			 s/w reset
+> 01
+#			 PLL_clkin = MCLK,codec_clkin = PLL_CLK
+w 30 04 03
+#			 PLL Power up, P = 1, R = 1
+> 91
+#			 J = 8
+> 08
+#			 D = 0000, D(13:8) = 0
+> 00
+#			           D(7:0) = 0
+> 00
+#			 mode is i2s,wordlength is 16
+w 30 1b 00
+#			 NDAC is powered up and set to 4
+w 30 0b 84
+#			 MDAC is powered up and set to 4
+> 84
+w 30 12 84
+> 84
+#			 DOSR = 128, DOSR(9:8) = 0
+> 00
+#			             DOSR(7:0) = 128
+> 80
+#			--------------------------------------------------------------- page 1 is selected
+w 30 00 01
+#			 MIC BIAS = AVDD
+w 30 2e 0b
+#			 MICPGA P = MIC 10k
+w 30 30 40
+#			 MICPGA M - CM 10k
+#> 40
+#			--------------------------------------------------------------- page 0 is selected
+w 30 00 00
+#			 POWERUP ADC channel
+w 30 51 80
+#			 UNMUTE ADC channel
+> 00

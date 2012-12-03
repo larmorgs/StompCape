@@ -1,0 +1,73 @@
+#			--------------------------------------------------------------- page 0 is selected 
+w 30 00 00
+#			 s/w reset
+> 01
+#			 PLL_clkin = MCLK,codec_clkin = PLL_CLK
+w 30 04 03
+#			 PLL Power up, P = 1, R = 1
+> 91
+#			 J = 8
+> 08
+#			 D = 0000, D(13:8) = 0
+> 00
+#			           D(7:0) = 0
+> 00
+#			 mode is i2s,wordlength is 16
+w 30 1b 00
+#			 NDAC is powered up and set to 4
+w 30 0b 84
+#			 MDAC is powered up and set to 4
+> 84
+w 30 12 84
+> 84
+#			 DOSR = 128, DOSR(9:8) = 0
+> 00
+#			             DOSR(7:0) = 128
+> 80
+#			 DAC => volume control thru pin disable 
+w 30 74 00
+#			 DAC => drc disable, th and hy
+w 30 44 00
+#			 DAC => -22 db gain left
+w 30 41 d4
+#			 DAC => -22 db gain right
+> d4
+#			--------------------------------------------------------------- page 3 (touch screen) is selected
+w 30 00 03
+#			 self-controlled conversion, mode 1 (X,Y) scan
+w 30 03 84
+#			--------------------------------------------------------------- page 1 is selected
+w 30 00 01
+#			 De-pop, Power on = 800 ms, Step time = 4 ms
+w 30 21 4e
+#			 HPL and HPR powered up
+w 30 1f c2
+#			 LDAC routed to HPL, RDAC routed to HPR
+w 30 23 88
+#			 HPL unmute and gain 0db
+w 30 28 06
+#			 HPR unmute and gain 0db
+> 06
+
+#			 MIC BIAS = AVDD
+w 30 2e 0b
+#			 MICPGA P = MIC 10k
+w 30 30 40
+#			 MICPGA M - CM 10k
+> 40
+#			--------------------------------------------------------------- page 0 is selected
+w 30 00 00
+#			 select DAC DSP mode 11 & enable adaptive filter
+w 30 3c 0b
+w 30 00 08
+w 30 01 04
+w 30 00 00
+#			 POWERUP DAC left and right channels (soft step disable)
+w 30 3f d6
+#			 UNMUTE DAC left and right channels
+> 00
+#			 POWERUP ADC channel
+w 30 51 80
+#			 UNMUTE ADC channel
+> 00
+
