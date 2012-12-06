@@ -1752,7 +1752,16 @@
 <wire x1="228.6" y1="124.46" x2="228.6" y2="127" width="0.1524" layer="91"/>
 <pinref part="U$11" gate="G$1" pin="3.3V"/>
 <pinref part="U$2" gate="G$1" pin="VDD_3V3EXP@2"/>
-<wire x1="208.28" y1="124.46" x2="228.6" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="124.46" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="AVDD"/>
+<wire x1="220.98" y1="124.46" x2="228.6" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="88.9" x2="241.3" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="73.66" x2="337.82" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="73.66" x2="337.82" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="20.32" x2="327.66" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="88.9" x2="220.98" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="88.9" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
+<junction x="220.98" y="124.46"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="VDD_3V3EXP@1"/>
@@ -1792,8 +1801,9 @@
 <pinref part="U$13" gate="G$1" pin="GND"/>
 <pinref part="U$2" gate="G$1" pin="GND@6"/>
 <wire x1="226.06" y1="68.58" x2="226.06" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="71.12" x2="208.28" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="71.12" x2="220.98" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="GND@5"/>
+<wire x1="220.98" y1="71.12" x2="208.28" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="71.12" x2="226.06" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="73.66" x2="226.06" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="GND@2"/>
@@ -1801,6 +1811,16 @@
 <wire x1="226.06" y1="127" x2="208.28" y2="127" width="0.1524" layer="91"/>
 <junction x="226.06" y="73.66"/>
 <junction x="226.06" y="71.12"/>
+<pinref part="U2" gate="A" pin="AVSS"/>
+<wire x1="236.22" y1="22.86" x2="251.46" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="71.12" x2="236.22" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="71.12" x2="236.22" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="SPKVSS"/>
+<wire x1="327.66" y1="40.64" x2="330.2" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="40.64" x2="330.2" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="7.62" x2="220.98" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="7.62" x2="220.98" y2="71.12" width="0.1524" layer="91"/>
+<junction x="220.98" y="71.12"/>
 </segment>
 </net>
 <net name="AVCC" class="0">
@@ -1808,6 +1828,17 @@
 <pinref part="U$5" gate="G$1" pin="AVCC"/>
 <pinref part="U$2" gate="G$1" pin="GPIO2_12"/>
 <wire x1="134.62" y1="144.78" x2="152.4" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U2" gate="A" pin="SPKVDD"/>
+<wire x1="327.66" y1="38.1" x2="335.28" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="38.1" x2="335.28" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="71.12" x2="243.84" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="71.12" x2="243.84" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="VDD_5V@2"/>
+<wire x1="243.84" y1="121.92" x2="208.28" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
