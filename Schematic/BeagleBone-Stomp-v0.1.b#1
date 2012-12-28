@@ -1232,8 +1232,8 @@ design rules under a new name.</description>
 <element name="C12" library="microbuilder" package="0402" value="0.1u" x="1.905" y="-118.745"/>
 <element name="C9" library="microbuilder" package="0402" value="0.01u" x="1.905" y="-128.905"/>
 <element name="U$20" library="bone" package="FXO-HC735-12" value="FXO-HC735-12" x="3.81" y="-136.525"/>
-<element name="R17" library="microbuilder" package="0402" value="5.6k" x="1.905" y="-139.065"/>
-<element name="R18" library="microbuilder" package="0402" value="5.6k" x="1.905" y="-141.605"/>
+<element name="R17" library="microbuilder" package="0402" value="4.7k" x="1.905" y="-139.065"/>
+<element name="R18" library="microbuilder" package="0402" value="4.7k" x="1.905" y="-141.605"/>
 </elements>
 <signals>
 <signal name="VDD_5V">
