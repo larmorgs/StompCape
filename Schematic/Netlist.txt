@@ -1,6 +1,6 @@
 Netlist
 
-Exported from BeagleBone-Stomp-v0.1.sch at 12/30/2012 6:01:53 PM
+Exported from BeagleBone-Stomp-v0.1.sch at 12/30/2012 9:26:18 PM
 
 EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
 
