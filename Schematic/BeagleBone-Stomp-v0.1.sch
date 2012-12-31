@@ -3493,6 +3493,21 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <sheets>
 <sheet>
 <plain>
+<text x="314.96" y="345.44" size="1.778" layer="97">Note: Used for stomp button debouncing and potentiometer
+signal conditioning. Also controls LEDs in sync with stomp
+buttons. Status can be polled over I2C.</text>
+<text x="459.74" y="388.62" size="1.778" layer="97">Note: Small footprint SPI-BI-WIRE connector.</text>
+<text x="449.58" y="236.22" size="1.778" layer="97">Note: Connectors for external, case-mounted components
+(stomp buttons, potentiometers, and LEDs)</text>
+<text x="279.4" y="124.46" size="1.778" layer="97">Note: Mono audio codec with built in speaker driver. Controlled over I2C.</text>
+<text x="297.18" y="25.4" size="1.778" layer="97">Note: Ferrite bead is for analog ground isolation.</text>
+<text x="20.32" y="144.78" size="1.778" layer="97">Note: 12MHz oscillator used by codec.</text>
+<text x="58.42" y="215.9" size="1.778" layer="97">Note: 1.8V regulator used by codec.</text>
+<text x="226.06" y="215.9" size="1.778" layer="97">Note: Cape identification EEPROM.</text>
+<text x="99.06" y="414.02" size="1.778" layer="97">Note: BeagleBone row connectors P8 and P9.</text>
+<text x="121.92" y="93.98" size="1.778" layer="97">Note: 1/4" mono audio jack</text>
+<text x="497.84" y="134.62" size="1.778" layer="97">Note: 1/4" mono audio jack</text>
+<text x="469.9" y="27.94" size="2.54" layer="94">Greg Larmore and Matt Moravec</text>
 </plain>
 <instances>
 <instance part="U$10" gate="G$1" x="81.28" y="337.82"/>
@@ -4755,4 +4770,10 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
