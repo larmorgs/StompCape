@@ -1,0 +1,1671 @@
+# Library script
+# 
+# Exported from C:/Program Files/EAGLE-6.3.0/lbr/bone.lbr at 12/30/2012 7:31:13 PM
+# 
+# EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
+# 
+Set Wire_Bend 2;
+# Grid changed to 'mm' to avoid loss of precision!
+Grid mm;
+Layer   1 Top;
+Layer  16 Bottom;
+Layer  17 Pads;
+Layer  18 Vias;
+Layer  19 Unrouted;
+Layer  20 Dimension;
+Layer  21 tPlace;
+Layer  22 bPlace;
+Layer  23 tOrigins;
+Layer  24 bOrigins;
+Layer  25 tNames;
+Layer  26 bNames;
+Layer  27 tValues;
+Layer  28 bValues;
+Layer  29 tStop;
+Layer  30 bStop;
+Layer  31 tCream;
+Layer  32 bCream;
+Layer  33 tFinish;
+Layer  34 bFinish;
+Layer  35 tGlue;
+Layer  36 bGlue;
+Layer  37 tTest;
+Layer  38 bTest;
+Layer  39 tKeepout;
+Layer  40 bKeepout;
+Layer  41 tRestrict;
+Layer  42 bRestrict;
+Layer  43 vRestrict;
+Layer  44 Drills;
+Layer  45 Holes;
+Layer  46 Milling;
+Layer  47 Measures;
+Layer  48 Document;
+Layer  49 Reference;
+Layer  50 dxf;
+Layer  51 tDocu;
+Layer  52 bDocu;
+Layer  53 tGND_GNDA;
+Layer  54 bGND_GNDA;
+Layer  56 wert;
+Layer  91 Nets;
+Layer  92 Busses;
+Layer  93 Pins;
+Layer  94 Symbols;
+Layer  95 Names;
+Layer  96 Values;
+Layer  97 Info;
+Layer  98 Guide;
+Layer 100 Muster;
+Layer 101 Patch_Top;
+Layer 102 Mittellin;
+Layer 103 Stiffner;
+Layer 104 Name;
+Layer 105 Beschreib;
+Layer 106 BGA-Top;
+Layer 107 BD-Top;
+Layer 108 tBridges;
+Layer 109 tBPL;
+Layer 110 bBPL;
+Layer 111 MPL;
+Layer 112 tSilk;
+Layer 121 sName;
+Layer 122 _bPlace;
+Layer 125 _tNames;
+Layer 126 _bNames;
+Layer 127 _tValues;
+Layer 128 _bValues;
+Layer 144 Drill_legend;
+Layer 151 HeatSink;
+Layer 152 _bDocu;
+Layer 200 200bmp;
+Layer 201 201bmp;
+Layer 202 202bmp;
+Layer 203 203bmp;
+Layer 204 204bmp;
+Layer 205 205bmp;
+Layer 248 Housing;
+Layer 249 Edge;
+Layer 250 Descript;
+Layer 251 SMDround;
+Layer 254 cooling;
+Description '\
+<h3>BeagleBone Stomp Cape Library</h3>\n\
+This is the library for the BeagleBone Stomp Cape. Note that some of the parts in this library are modified parts from the microbuilder and tag-connect libraries.\n\
+<p>\n\
+Greg Larmore &#8249;larmoreg@gmail.com&#8250;';
+
+Edit 'TLV320AIC3120_RHB_32.sym';
+Pin 'IOVSS' pwr none middle R0 both 0 (0 0);
+Pin 'IOVDD' pwr none middle R0 both 0 (0 -2.54);
+Pin 'DVDD' pwr none middle R0 both 0 (0 -5.08);
+Pin 'DOUT' out none middle R0 both 0 (0 -7.62);
+Pin 'DIN' in none middle R0 both 0 (0 -10.16);
+Pin 'WCLK' io none middle R0 both 0 (0 -12.7);
+Pin 'BCLK' io none middle R0 both 0 (0 -15.24);
+Pin 'MCLK' in none middle R0 both 0 (0 -17.78);
+Pin 'SDA' io none middle R0 both 0 (0 -20.32);
+Pin 'SCL' io none middle R0 both 0 (0 -22.86);
+Pin 'VOL/MICDET' in none middle R0 both 0 (0 -25.4);
+Pin 'MICBIAS' out none middle R0 both 0 (0 -27.94);
+Pin 'MIC1LP' in none middle R0 both 0 (0 -30.48);
+Pin 'MIC1RP' in none middle R0 both 0 (0 -33.02);
+Pin 'MIC1LM' in none middle R0 both 0 (0 -35.56);
+Pin 'AVSS' pwr none middle R0 both 0 (0 -38.1);
+Pin 'AVDD' pwr none middle R180 both 0 (76.2 -40.64);
+Pin 'DVSS' pwr none middle R180 both 0 (76.2 -38.1);
+Pin 'SPKM_2' out none middle R180 both 0 (76.2 -35.56);
+Pin 'SPKVSS_2' pwr none middle R180 both 0 (76.2 -33.02);
+Pin 'SPKVDD_2' pwr none middle R180 both 0 (76.2 -30.48);
+Pin 'SPKP_2' out none middle R180 both 0 (76.2 -27.94);
+Pin 'SPKM' out none middle R180 both 0 (76.2 -25.4);
+Pin 'SPKVDD' pwr none middle R180 both 0 (76.2 -22.86);
+Pin 'SPKVSS' pwr none middle R180 both 0 (76.2 -20.32);
+Pin 'SPKP' out none middle R180 both 0 (76.2 -17.78);
+Pin 'HPOUT' out none middle R180 both 0 (76.2 -15.24);
+Pin 'HPVDD' pwr none middle R180 both 0 (76.2 -12.7);
+Pin 'HPVSS' pwr none middle R180 both 0 (76.2 -10.16);
+Pin 'NC' pas none middle R180 both 0 (76.2 -7.62);
+Pin '*RESET' in none middle R180 both 0 (76.2 -5.08);
+Pin 'GPIO1' io none middle R180 both 0 (76.2 -2.54);
+Pin 'EPAD' pas none middle R180 both 0 (76.2 0);
+Layer 94;
+Change Style continuous;
+Wire  0.1524 (5.08 5.08) (5.08 -45.72) (71.12 -45.72) (71.12 5.08) \
+      (5.08 5.08);
+Layer 95;
+Change Size 2.0828;
+Change Ratio 6;
+Change Align bottom left;
+Change Font proportional;
+Text '>NAME' SR0 (33.3756 6.5786);
+Layer 96;
+Change Size 2.0828;
+Change Ratio 6;
+Change Align bottom left;
+Text '>VALUE' SR0 (32.4358 -49.3014);
+
+Edit 'MSP430G2553_RHB_32.sym';
+Pin 'P1.1/TA0.0/UCA0RXD/UCA0SOMI/A1/CA1' io none middle R0 both 0 (0 0);
+Pin 'P1.2/TA0.1/UCA0TXD/UCA0SIMO/A2/CA2' io none middle R0 both 0 (0 -2.54);
+Pin 'P1.3/ADC10CLK/CAOUT/VREF-/VEREF-/A3/CA3' io none middle R0 both 0 (0 -5.08);
+Pin 'P1.4/SMCLK/UCB0STE/UCA0CLK/VREF+/VEREF+/A4/CA4/TCK' io none middle R0 both 0 (0 -7.62);
+Pin 'P1.5/TA0.0/UCB0CLK/UCA0STE/A5/CA5/TMS' io none middle R0 both 0 (0 -10.16);
+Pin 'P3.1/TA1.0' io none middle R0 both 0 (0 -12.7);
+Pin 'P3.0/TA0.2' io none middle R0 both 0 (0 -15.24);
+Pin 'NC_2' pas none middle R0 both 0 (0 -17.78);
+Pin 'P2.0/TA1.0' io none middle R0 both 0 (0 -20.32);
+Pin 'P2.1/TA1.1' io none middle R0 both 0 (0 -22.86);
+Pin 'P2.2/TA1.1' io none middle R0 both 0 (0 -25.4);
+Pin 'P3.2/TA1.1' io none middle R0 both 0 (0 -27.94);
+Pin 'P3.3/TA1.2' io none middle R0 both 0 (0 -30.48);
+Pin 'P3.4/TA0.0' io none middle R0 both 0 (0 -33.02);
+Pin 'P2.3/TA1.0' io none middle R0 both 0 (0 -35.56);
+Pin 'P2.4/TA1.2' io none middle R0 both 0 (0 -38.1);
+Pin 'P2.5/TA1.2' io none middle R180 both 0 (111.76 -40.64);
+Pin 'P3.5/TA0.1' io none middle R180 both 0 (111.76 -38.1);
+Pin 'P3.6/TA0.2' io none middle R180 both 0 (111.76 -35.56);
+Pin 'P3.7/TA1CLK/CAOUT' io none middle R180 both 0 (111.76 -33.02);
+Pin 'P1.6/TA0.1/UCB0SOMI/UCB0SCL/A6/CA6/TDI/TCLK' io none middle R180 both 0 (111.76 -30.48);
+Pin 'P1.7/CAOUT/UCB0SIMO/UCB0SDA/A7/CA7/TDO/TDI' io none middle R180 both 0 (111.76 -27.94);
+Pin '*RST/NMI/SBWTDIO' io none middle R180 both 0 (111.76 -25.4);
+Pin 'TEST/SBWTCK' io none middle R180 both 0 (111.76 -22.86);
+Pin 'XOUT/P2.7' io none middle R180 both 0 (111.76 -20.32);
+Pin 'XIN/P2.6/TA0.1' io none middle R180 both 0 (111.76 -17.78);
+Pin 'AVSS' pwr none middle R180 both 0 (111.76 -15.24);
+Pin 'DVSS' pwr none middle R180 both 0 (111.76 -12.7);
+Pin 'AVCC' pwr none middle R180 both 0 (111.76 -10.16);
+Pin 'DVCC' pwr none middle R180 both 0 (111.76 -7.62);
+Pin 'P1.0/TA0CLK/ACLK/A0/CA0' io none middle R180 both 0 (111.76 -5.08);
+Pin 'NC' pas none middle R180 both 0 (111.76 -2.54);
+Pin 'EPAD' pas none middle R180 both 0 (111.76 0);
+Layer 94;
+Wire  0.1524 (5.08 2.54) (5.08 -43.18) (106.68 -43.18) (106.68 2.54) \
+      (5.08 2.54);
+Layer 95;
+Change Size 2.0828;
+Change Ratio 6;
+Change Align bottom left;
+Text '>NAME' SR0 (46.0756 4.0386);
+Layer 96;
+Change Size 2.0828;
+Change Ratio 6;
+Change Align bottom left;
+Text '>VALUE' SR0 (47.6758 -46.7614);
+
+Edit 'NMJ4HFD2.sym';
+Layer 94;
+Wire  0.254 (-17.78 -2.54) (-17.78 -7.62) (-20.32 -7.62) (-20.32 -2.54) \
+      (-17.78 -2.54);
+Wire  0.254 (-17.78 0) (-17.78 -2.54);
+Wire  0.254 (-17.78 -7.62) (-17.78 -10.16) (20.32 -10.16);
+Wire  0.254 (-10.16 0) (-7.62 -2.54) (5.08 10.16) (12.7 10.16) \
+      (20.32 10.16);
+Wire  0.254 (0 0) (2.54 -2.54) (5.08 0) (12.7 0);
+Pin 'S' io none point R180 both 0 (20.32 10.16);
+Pin 'T' io none point R180 both 0 (20.32 0);
+Pin 'SN' io none point R180 both 0 (20.32 5.08);
+Layer 94;
+Wire  0.254 (12.7 0) (20.32 0);
+Wire  0.254 (12.7 -5.08) (20.32 -5.08);
+Wire  0.254 (12.7 10.16) (12.7 5.08);
+Pin 'TN' io none point R180 both 0 (20.32 -5.08);
+Layer 94;
+Wire  0.254 (12.7 -5.08) (12.7 0);
+Layer 94;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.254  (12.7 10.16) (15.24 7.62) (10.16 7.62) (12.7 10.16);
+Layer 94;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.254  (12.7 0) (10.16 -2.54) (15.24 -2.54) (12.7 0);
+Layer 95;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '>NAME' R0 (-15.24 7.62);
+Layer 96;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '>VALUE' R0 (-15.24 5.08);
+Layer 94;
+Wire  0.254 \
+      (12.7 5.08) (20.32 5.08);
+
+Edit 'TPS73701_DRB_8.sym';
+Pin 'OUT' out none middle R0 both 0 (0 0);
+Pin 'NC_2' pas none middle R0 both 0 (0 -2.54);
+Pin 'NR/FB' io none middle R0 both 0 (0 -5.08);
+Pin 'GND' pwr none middle R0 both 0 (0 -7.62);
+Pin 'EN' pas none middle R180 both 0 (38.1 -10.16);
+Pin 'NC_3' pas none middle R180 both 0 (38.1 -7.62);
+Pin 'NC' pas none middle R180 both 0 (38.1 -5.08);
+Pin 'IN' in none middle R180 both 0 (38.1 -2.54);
+Pin 'EPAD' pas none middle R180 both 0 (38.1 0);
+Layer 94;
+Wire  0.1524 (5.08 5.08) (5.08 -15.24) (33.02 -15.24) (33.02 5.08) \
+      (5.08 5.08);
+Layer 95;
+Change Size 2.0828;
+Change Ratio 6;
+Change Align bottom left;
+Text '>NAME' SR0 (15.5956 6.5786);
+Layer 96;
+Change Size 2.0828;
+Change Ratio 6;
+Change Align bottom left;
+Text '>VALUE' SR0 (14.6558 -18.8214);
+
+Edit 'FXO-HC735-12.sym';
+Layer 94;
+Wire  0.254 (7.62 7.62) (7.62 -7.62);
+Wire  0.254 (-7.62 7.62) (7.62 7.62);
+Wire  0.254 (7.62 -7.62) (-7.62 -7.62) (-7.62 7.62);
+Pin 'E/D' io none middle R0 both 0 (-12.7 5.08);
+Pin 'GND' io none middle R0 both 0 (-12.7 -5.08);
+Pin 'OUT' io none middle R180 both 0 (12.7 -5.08);
+Pin 'VDD' io none middle R180 both 0 (12.7 5.08);
+Layer 95;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '>NAME' R0 (-5.08 10.16);
+Layer 96;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '>VALUE' R0 (-5.08 -10.16);
+
+Edit 'ICSP.sym';
+Layer 94;
+Wire  0.254 (-10.16 10.16) (-10.16 -7.62) (8.89 -7.62) (8.89 10.16) \
+      (-10.16 10.16);
+Layer 94;
+Circle 0.254 (5.842 9.144) (6.4099 9.144);
+Layer 94;
+Circle 0.254 (4.826 3.048) (5.3939 3.048);
+Layer 94;
+Circle 0.254 (6.858 3.048) (7.4259 3.048);
+Pin 'SBWTDIO' pas none short R0 both 0 (-12.7 7.62);
+Pin 'VCC_OUT' pwr none short R0 both 0 (-12.7 5.08);
+Pin 'TCK' pwr none short R0 both 0 (-12.7 2.54);
+Pin 'VCC_IN' io none short R0 both 0 (-12.7 0);
+Pin 'VSS' out none short R0 both 0 (-12.7 -2.54);
+Pin 'SBWTCK' io none short R0 both 0 (-12.7 -5.08);
+Layer 94;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.254  (6.096 7.62) -90 (6.604 8.128) -90 (7.112 7.62) -90 (6.604 7.112) -90 \
+      (6.096 7.62);
+Layer 94;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.254  (4.572 7.62) -90 (5.08 8.128) -90 (5.588 7.62) -90 (5.08 7.112) -90 \
+      (4.572 7.62);
+Layer 94;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.254  (6.096 6.096) -90 (6.604 6.604) -90 (7.112 6.096) -90 (6.604 5.588) -90 \
+      (6.096 6.096);
+Layer 94;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.254  (4.572 6.096) -90 (5.08 6.604) -90 (5.588 6.096) -90 (5.08 5.588) -90 \
+      (4.572 6.096);
+Layer 94;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.254  (4.572 4.572) -90 (5.08 5.08) -90 (5.588 4.572) -90 (5.08 4.064) -90 \
+      (4.572 4.572);
+Layer 94;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.254  (6.096 4.572) -90 (6.604 5.08) -90 (7.112 4.572) -90 (6.604 4.064) -90 \
+      (6.096 4.572);
+
+Edit 'BEAGLEBONE.sym';
+Layer 94;
+Wire  0.4064 (-31.75 2.54) (31.75 2.54) (31.75 63.5) \
+      (-31.75 63.5) (-31.75 2.54);
+Wire  0.4064 (-31.75 -63.5) (31.75 -63.5) (31.75 -2.54) (-31.75 -2.54) \
+      (-31.75 -63.5);
+Layer 95;
+Change Size 1.778;
+Change Ratio 8;
+Change Align bottom left;
+Text '>NAME' R0 (-31.75 66.675);
+Layer 96;
+Change Size 1.778;
+Change Ratio 8;
+Change Align bottom left;
+Text '>VALUE' R0 (-31.75 -66.04);
+Layer 95;
+Change Size 1.778;
+Change Ratio 8;
+Change Align bottom left;
+Text 'P8' R0 (-31.75 64.135);
+Layer 95;
+Change Size 1.778;
+Change Ratio 8;
+Change Align bottom left;
+Text 'P9' R0 (-31.75 -1.905);
+Pin 'GND@1' pwr dot short R0 pin 0 (-27.94 -5.08);
+Pin 'GND@2' pwr dot short R180 pin 0 (27.94 -5.08);
+Pin 'VDD_3V3EXP@1' pwr dot short R0 pin 0 (-27.94 -7.62);
+Pin 'VDD_3V3EXP@2' pwr dot short R180 pin 0 (27.94 -7.62);
+Pin 'VDD_5V@1' pwr dot short R0 pin 0 (-27.94 -10.16);
+Pin 'VDD_5V@2' pwr dot short R180 pin 0 (27.94 -10.16);
+Pin 'SYS_5V@1' pwr dot short R0 pin 0 (-27.94 -12.7);
+Pin 'SYS_5V@2' pwr dot short R180 pin 0 (27.94 -12.7);
+Pin 'PWR_BUT' io dot short R0 pin 0 (-27.94 -15.24);
+Pin 'SYS_RESETN' in dot short R180 pin 0 (27.94 -15.24);
+Pin 'UART4_RXD' in dot short R0 pin 0 (-27.94 -17.78);
+Pin 'GPIO1_28' io dot short R180 pin 0 (27.94 -17.78);
+Pin 'UART4_TXD' out dot short R0 pin 0 (-27.94 -20.32);
+Pin 'EHRPWM1A' io dot short R180 pin 0 (27.94 -20.32);
+Pin 'GPIO1_16' io dot short R0 pin 0 (-27.94 -22.86);
+Pin 'EHRPWM1B' io dot short R180 pin 0 (27.94 -22.86);
+Pin 'I2C1_SCL' io dot short R0 pin 0 (-27.94 -25.4);
+Pin 'I2C1_SDA' io dot short R180 pin 0 (27.94 -25.4);
+Pin 'I2C2_SCL' io dot short R0 pin 0 (-27.94 -27.94);
+Pin 'I2C2_SDA' io dot short R180 pin 0 (27.94 -27.94);
+Pin 'UART2_TXD' out dot short R0 pin 0 (-27.94 -30.48);
+Pin 'UART2_RXD' in dot short R180 pin 0 (27.94 -30.48);
+Pin 'GPIO1_17' io dot short R0 pin 0 (-27.94 -33.02);
+Pin 'UART1_TXD' out dot short R180 pin 0 (27.94 -33.02);
+Pin 'GPIO3_21' io dot short R0 pin 0 (-27.94 -35.56);
+Pin 'UART1_RXD' in dot short R180 pin 0 (27.94 -35.56);
+Pin 'GPIO3_19' io dot short R0 pin 0 (-27.94 -38.1);
+Pin 'SPI1_CS0' io dot short R180 pin 0 (27.94 -38.1);
+Pin 'SPI1_DO' io dot short R0 pin 0 (-27.94 -40.64);
+Pin 'SPI1_DI' io dot short R180 pin 0 (27.94 -40.64);
+Pin 'SPI1_SCLK' io dot short R0 pin 0 (-27.94 -43.18);
+Pin 'VDD_ADC' pwr dot short R180 pin 0 (27.94 -43.18);
+Pin 'AIN4' in dot short R0 pin 0 (-27.94 -45.72);
+Pin 'GNDA_ADC' pwr dot short R180 pin 0 (27.94 -45.72);
+Pin 'AIN6' in dot short R0 pin 0 (-27.94 -48.26);
+Pin 'AIN5' in dot short R180 pin 0 (27.94 -48.26);
+Pin 'AIN2' in dot short R0 pin 0 (-27.94 -50.8);
+Pin 'AIN3' in dot short R180 pin 0 (27.94 -50.8);
+Pin 'AIN0' in dot short R0 pin 0 (-27.94 -53.34);
+Pin 'AIN1' in dot short R180 pin 0 (27.94 -53.34);
+Pin 'CLKOUT2' out dot short R0 pin 0 (-27.94 -55.88);
+Pin 'GPIO0_7' io dot short R180 pin 0 (27.94 -55.88);
+Pin 'GND@3' pwr dot short R0 pin 0 (-27.94 -58.42);
+Pin 'GND@5' pwr dot short R180 pin 0 (27.94 -58.42);
+Pin 'GND@4' pwr dot short R0 pin 0 (-27.94 -60.96);
+Pin 'GND@6' pwr dot short R180 pin 0 (27.94 -60.96);
+Pin 'GND@7' pwr dot short R0 pin 0 (-27.94 60.96);
+Pin 'GND@8' pwr dot short R180 pin 0 (27.94 60.96);
+Pin 'GPIO1_6' io dot short R0 pin 0 (-27.94 58.42);
+Pin 'GPIO1_7' io dot short R180 pin 0 (27.94 58.42);
+Pin 'GPIO1_2' io dot short R0 pin 0 (-27.94 55.88);
+Pin 'GPIO1_3' io dot short R180 pin 0 (27.94 55.88);
+Pin 'TIMER4' io dot short R0 pin 0 (-27.94 53.34);
+Pin 'TIMER7' io dot short R180 pin 0 (27.94 53.34);
+Pin 'TIMER5' io dot short R0 pin 0 (-27.94 50.8);
+Pin 'TIMER6' io dot short R180 pin 0 (27.94 50.8);
+Pin 'GPIO1_13' io dot short R0 pin 0 (-27.94 48.26);
+Pin 'GPIO1_12' io dot short R180 pin 0 (27.94 48.26);
+Pin 'EHRPWM2B' io dot short R0 pin 0 (-27.94 45.72);
+Pin 'GPIO0_26' io dot short R180 pin 0 (27.94 45.72);
+Pin 'GPIO1_15' io dot short R0 pin 0 (-27.94 43.18);
+Pin 'GPIO1_14' io dot short R180 pin 0 (27.94 43.18);
+Pin 'GPIO0_27' io dot short R0 pin 0 (-27.94 40.64);
+Pin 'GPIO2_1' io dot short R180 pin 0 (27.94 40.64);
+Pin 'EHRPWM2A' io dot short R0 pin 0 (-27.94 38.1);
+Pin 'GPIO1_31' io dot short R180 pin 0 (27.94 38.1);
+Pin 'GPIO1_30' io dot short R0 pin 0 (-27.94 35.56);
+Pin 'GPIO1_5' io dot short R180 pin 0 (27.94 35.56);
+Pin 'GPIO1_4' io dot short R0 pin 0 (-27.94 33.02);
+Pin 'GPIO1_1' io dot short R180 pin 0 (27.94 33.02);
+Pin 'GPIO1_0' io dot short R0 pin 0 (-27.94 30.48);
+Pin 'GPIO1_29' io dot short R180 pin 0 (27.94 30.48);
+Pin 'GPIO2_22' io dot short R0 pin 0 (-27.94 27.94);
+Pin 'GPIO2_24' io dot short R180 pin 0 (27.94 27.94);
+Pin 'GPIO2_23' io dot short R0 pin 0 (-27.94 25.4);
+Pin 'GPIO2_25' io dot short R180 pin 0 (27.94 25.4);
+Pin 'UART5_CTSN' io dot short R0 pin 0 (-27.94 22.86);
+Pin 'UART5_RTSN' io dot short R180 pin 0 (27.94 22.86);
+Pin 'UART4_RTSN' io dot short R0 pin 0 (-27.94 20.32);
+Pin 'UART3_RTSN' io dot short R180 pin 0 (27.94 20.32);
+Pin 'UART4_CTSN' io dot short R0 pin 0 (-27.94 17.78);
+Pin 'UART3_CTSN' io dot short R180 pin 0 (27.94 17.78);
+Pin 'UART5_TXD' out dot short R0 pin 0 (-27.94 15.24);
+Pin 'UART5_RXD' in dot short R180 pin 0 (27.94 15.24);
+Pin 'GPIO2_12' io dot short R0 pin 0 (-27.94 12.7);
+Pin 'GPIO2_13' io dot short R180 pin 0 (27.94 12.7);
+Pin 'GPIO2_10' io dot short R0 pin 0 (-27.94 10.16);
+Pin 'GPIO2_11' io dot short R180 pin 0 (27.94 10.16);
+Pin 'GPIO2_8' io dot short R0 pin 0 (-27.94 7.62);
+Pin 'GPIO2_9' io dot short R180 pin 0 (27.94 7.62);
+Pin 'GPIO2_6' io dot short R0 pin 0 (-27.94 5.08);
+Pin 'GPIO2_7' io dot short R180 pin 0 (27.94 5.08);
+Layer 97;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text 'VDD_ADC = 1.8V' R0 (-7.62 -48.26);
+Layer 97;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text 'AIN: 1.8V Max!' R0 (-7.62 -50.8);
+Layer 97;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text 'Digital IO = 3.3V' R0 (-7.62 -55.88);
+
+Edit 'CTS-219-2MST.sym';
+Layer 94;
+Wire  0.254 (-5.08 7.62) (5.08 7.62) (5.08 -5.08) (-5.08 -5.08) \
+      (-5.08 7.62);
+Pin 'P$4' io none middle R270 off 0 (-2.54 12.7);
+Pin 'P$3' io none middle R270 off 0 (2.54 12.7);
+Pin 'P$1' io none middle R90 off 0 (-2.54 -10.16);
+Pin 'P$2' io none middle R90 off 0 (2.54 -10.16);
+Layer 94;
+Wire  0.254 (-3.81 5.08) (-3.81 0) (-3.81 -2.54) (-1.27 -2.54) \
+      (-1.27 0) (-1.27 5.08) (-3.81 5.08);
+Wire  0.254 (1.27 5.08) (3.81 5.08) (3.81 0) (3.81 -2.54) \
+      (1.27 -2.54) (1.27 0) (1.27 5.08);
+Wire  0.254 (3.81 0) (1.27 0);
+Wire  0.254 (-1.27 0) (-3.81 0);
+Layer 94;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '1' R0 (-2.54 -4.445);
+Layer 94;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '2' R0 (2.54 -4.445);
+Layer 94;
+Circle 0.254 (-3.81 -3.81) (-3.175 -3.81);
+Layer 95;
+Change Size 1.778;
+Change Ratio 8;
+Change Align bottom left;
+Text '>NAME' R90 (-6.35 -2.54);
+Layer 96;
+Change Size 1.778;
+Change Ratio 8;
+Change Align bottom left;
+Text '>VALUE' R90 (7.62 -2.54);
+
+Edit 'RHB32_3P45X3P45.pac';
+Description '';
+Layer 1;
+Smd '1' 0.2794 0.8382 -0 R270 (-2.4638 1.7526);
+Layer 1;
+Smd '2' 0.2794 0.8382 -0 R270 (-2.4638 1.2446);
+Layer 1;
+Smd '3' 0.2794 0.8382 -0 R270 (-2.4638 0.762);
+Layer 1;
+Smd '4' 0.2794 0.8382 -0 R270 (-2.4638 0.254);
+Layer 1;
+Smd '5' 0.2794 0.8382 -0 R270 (-2.4638 -0.254);
+Layer 1;
+Smd '6' 0.2794 0.8382 -0 R270 (-2.4638 -0.762);
+Layer 1;
+Smd '7' 0.2794 0.8382 -0 R270 (-2.4638 -1.2446);
+Layer 1;
+Smd '8' 0.2794 0.8382 -0 R270 (-2.4638 -1.7526);
+Layer 1;
+Smd '9' 0.2794 0.8382 -0 R180 (-1.7526 -2.4638);
+Layer 1;
+Smd '10' 0.2794 0.8382 -0 R180 (-1.2446 -2.4638);
+Layer 1;
+Smd '11' 0.2794 0.8382 -0 R180 (-0.762 -2.4638);
+Layer 1;
+Smd '12' 0.2794 0.8382 -0 R180 (-0.254 -2.4638);
+Layer 1;
+Smd '13' 0.2794 0.8382 -0 R180 (0.254 -2.4638);
+Layer 1;
+Smd '14' 0.2794 0.8382 -0 R180 (0.762 -2.4638);
+Layer 1;
+Smd '15' 0.2794 0.8382 -0 R180 (1.2446 -2.4638);
+Layer 1;
+Smd '16' 0.2794 0.8382 -0 R180 (1.7526 -2.4638);
+Layer 1;
+Smd '17' 0.2794 0.8382 -0 R270 (2.4638 -1.7526);
+Layer 1;
+Smd '18' 0.2794 0.8382 -0 R270 (2.4638 -1.2446);
+Layer 1;
+Smd '19' 0.2794 0.8382 -0 R270 (2.4638 -0.762);
+Layer 1;
+Smd '20' 0.2794 0.8382 -0 R270 (2.4638 -0.254);
+Layer 1;
+Smd '21' 0.2794 0.8382 -0 R270 (2.4638 0.254);
+Layer 1;
+Smd '22' 0.2794 0.8382 -0 R270 (2.4638 0.762);
+Layer 1;
+Smd '23' 0.2794 0.8382 -0 R270 (2.4638 1.2446);
+Layer 1;
+Smd '24' 0.2794 0.8382 -0 R270 (2.4638 1.7526);
+Layer 1;
+Smd '25' 0.2794 0.8382 -0 R180 (1.7526 2.4638);
+Layer 1;
+Smd '26' 0.2794 0.8382 -0 R180 (1.2446 2.4638);
+Layer 1;
+Smd '27' 0.2794 0.8382 -0 R180 (0.762 2.4638);
+Layer 1;
+Smd '28' 0.2794 0.8382 -0 R180 (0.254 2.4638);
+Layer 1;
+Smd '29' 0.2794 0.8382 -0 R180 (-0.254 2.4638);
+Layer 1;
+Smd '30' 0.2794 0.8382 -0 R180 (-0.762 2.4638);
+Layer 1;
+Smd '31' 0.2794 0.8382 -0 R180 (-1.2446 2.4638);
+Layer 1;
+Smd '32' 0.2794 0.8382 -0 R180 (-1.7526 2.4638);
+Layer 1;
+Smd '33' 3.4544 3.4544 -0 R0 (0 0);
+Change Drill 0.254;Pad 'V_3' round 0 R0 (-1.1684 -1.1684);
+Change Drill 0.254;Pad 'V_2' round 0 R0 (-1.1684 -0.4064);
+Change Drill 0.254;Pad 'V_4' round 0 R0 (-1.1684 0.4064);
+Change Drill 0.254;Pad 'V_5' round 0 R0 (-1.1684 1.1684);
+Change Drill 0.254;Pad 'V_6' round 0 R0 (-0.4064 -1.1684);
+Change Drill 0.254;Pad 'V_7' round 0 R0 (-0.4064 -0.4064);
+Change Drill 0.254;Pad 'V_8' round 0 R0 (-0.4064 0.4064);
+Change Drill 0.254;Pad 'V_9' round 0 R0 (-0.4064 1.1684);
+Change Drill 0.254;Pad 'V_10' round 0 R0 (0.4064 -1.1684);
+Change Drill 0.254;Pad 'V_11' round 0 R0 (0.4064 -0.4064);
+Change Drill 0.254;Pad 'V_12' round 0 R0 (0.4064 0.4064);
+Change Drill 0.254;Pad 'V_13' round 0 R0 (0.4064 1.1684);
+Change Drill 0.254;Pad 'V_14' round 0 R0 (1.1684 -1.1684);
+Change Drill 0.254;Pad 'V_15' round 0 R0 (1.1684 -0.4064);
+Change Drill 0.254;Pad 'V_16' round 0 R0 (1.1684 0.4064);
+Change Drill 0.254;Pad 'V' round 0 R0 (1.1684 1.1684);
+Layer 21;
+Change Size 1.27;
+Change Ratio 6;
+Change Align bottom left;
+Text '*' SR0 (-4.1148 1.7526);
+Layer 51;
+Wire  0.1524 (-1.2954 2.5654) (-2.5654 2.5654) (-2.5654 1.2954);
+Layer 51;
+Change Size 1.27;
+Change Ratio 6;
+Change Align bottom left;
+Text '*' SR0 (-4.1148 1.7526);
+Layer 25;
+Change Size 1.27;
+Change Ratio 6;
+Change Align bottom left;
+Text '>NAME' SR0 (-2.8702 3.175);
+Layer 27;
+Change Size 1.27;
+Change Ratio 6;
+Change Align bottom left;
+Text '>VALUE' SR0 (-0.9144 -4.445);
+Layer 21;
+Wire  0.1524 (-2.2352 2.8194) (-2.8194 2.8194);
+Wire  0.1524 (2.8194 2.2352) (2.8194 2.8194);
+Wire  0.1524 (2.2352 -2.8194) (2.8194 -2.8194);
+Wire  0.1524 (-2.8194 -2.2352) (-2.8194 -2.8194) (-2.2352 -2.8194);
+Wire  0.1524 (2.8194 -2.8194) (2.8194 -2.2352);
+Wire  0.1524 (2.8194 2.8194) (2.2352 2.8194);
+Wire  0.1524 (-2.8194 2.8194) (-2.8194 2.2352);
+Wire  0.1524 (-1.4478 -3.1496) (-1.4478 -3.4036) (-1.0668 -3.4036) (-1.0668 -3.1496);
+Wire  0.1524 (3.4036 -0.0508) (3.4036 -0.4318) (3.1496 -0.4318) (3.1496 -0.0508);
+Wire  0.1524 (-0.9398 3.1496) (-0.9398 3.4036) (-0.5588 3.4036) (-0.5588 3.1496);
+Layer 21;
+Change Size 1.27;
+Change Ratio 6;
+Change Align bottom left;
+Text '*' SR0 (-4.1148 1.7526);
+Layer 51;
+Wire  0.1524 (-2.5654 1.2954) (-1.2954 2.5654);
+Wire  0.1524 (-2.5654 -2.5654) (2.5654 -2.5654) (2.5654 2.5654) (-1.2954 2.5654);
+Wire  0.1524 (-2.5654 1.2954) (-2.5654 -2.5654);
+Layer 51;
+Change Size 1.27;
+Change Ratio 6;
+Change Align bottom left;
+Text '*' SR0 (-4.1148 1.7526);
+Layer 25;
+Change Size 1.27;
+Change Ratio 6;
+Change Align bottom left;
+Text '>NAME' SR0 (-2.8702 -0.635);
+Layer 27;
+Change Size 1.27;
+Change Ratio 6;
+Change Align bottom left;
+Text '>VALUE' SR0 (-3.4544 -0.635);
+
+Edit 'NMJ4HFD2.pac';
+Description '';
+Change Drill 1.4;Pad 'TN' long 2.54 R0 (-6.35 -8.1153);
+Change Drill 1.4;Pad 'T' long 2.54 R0 (-6.35 8.1153);
+Change Drill 1.4;Pad 'S' long 2.54 R0 (6.35 8.1153);
+Change Drill 1.4;Pad 'SN' long 2.54 R0 (6.35 -8.1153);
+Layer 51;
+Wire  0.8128 (10.6934 8.89) (-15.24 8.89) (-15.24 -8.89) (10.6934 -8.89) \
+      (10.6934 8.89);
+Layer 25;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '>NAME' R0 (-2.54 10.16);
+Layer 27;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '>VALUE' R0 (-2.54 -11.43);
+
+Edit 'DRB8_1P75X1P5.pac';
+Description '';
+Layer 1;
+Smd '1' 0.8382 0.3556 -0 R0 (-1.4732 0.9652);
+Layer 1;
+Smd '2' 0.8382 0.3556 -0 R0 (-1.4732 0.3302);
+Layer 1;
+Smd '3' 0.8382 0.3556 -0 R0 (-1.4732 -0.3302);
+Layer 1;
+Smd '4' 0.8382 0.3556 -0 R0 (-1.4732 -0.9652);
+Layer 1;
+Smd '5' 0.8382 0.3556 -0 R0 (1.4732 -0.9652);
+Layer 1;
+Smd '6' 0.8382 0.3556 -0 R0 (1.4732 -0.3302);
+Layer 1;
+Smd '7' 0.8382 0.3556 -0 R0 (1.4732 0.3302);
+Layer 1;
+Smd '8' 0.8382 0.3556 -0 R0 (1.4732 0.9652);
+Layer 1;
+Smd '9' 1.4986 1.7526 -0 R0 (0 0);
+Change Drill 0.254;Pad 'V' round 0 R0 (0 -0.4064);
+Change Drill 0.254;Pad 'V_2' round 0 R0 (0 0.4064);
+Layer 51;
+Wire  0.1524 (-1.5748 1.1684) (-1.5748 0.7874);
+Wire  0.1524 (-1.5748 0.508) (-1.5748 0.1524);
+Wire  0.1524 (-1.5748 -0.1524) (-1.5748 -0.508);
+Wire  0.1524 (-1.5748 -0.7874) (-1.5748 -1.1684);
+Wire  0.1524 (1.5748 -1.1684) (1.5748 -0.7874);
+Wire  0.1524 (1.5748 -0.508) (1.5748 -0.1524);
+Wire  0.1524 (1.5748 0.1524) (1.5748 0.508);
+Wire  0.1524 (1.5748 0.7874) (1.5748 1.1684);
+Wire  0.1524 (-1.5748 -1.5748) (1.5748 -1.5748) (1.5748 1.5748) (0.3048 1.5748) \
+      (-0.3048 1.5748) (-1.5748 1.5748) (-1.5748 -1.5748);
+Wire  0 (0.3048 1.5748) -180 (-0.3048 1.5748);
+Layer 51;
+Change Size 1.27;
+Change Ratio 6;
+Change Align bottom left;
+Text '*' SR0 (-2.286 1.1938);
+Layer 1;
+Wire  0.1524 (-0.5588 0.8636) (-0.5588 1.5748) (-0.3048 1.5748) (-0.3048 0.8636);
+Wire  0.1524 (0.5588 0.8636) (0.5588 1.5748) (0.3048 1.5748) (0.3048 0.8636);
+Wire  0.1524 (0.5588 -0.8636) (0.5588 -1.5748) (0.3048 -1.5748) (0.3048 -0.8636);
+Wire  0.1524 (-0.5588 -0.8636) (-0.5588 -1.5748) (-0.3048 -1.5748) (-0.3048 -0.8636);
+Layer 21;
+Wire  0.1524 (0.889 -1.5748) (1.5748 -1.5748);
+Wire  0.1524 (-1.5748 -1.5748) (-0.889 -1.5748);
+Wire  0.1524 (1.5748 1.5748) (0.889 1.5748);
+Wire  0.1524 (-0.889 1.5748) (-1.5748 1.5748);
+Layer 21;
+Change Size 1.27;
+Change Ratio 6;
+Change Align bottom left;
+Text '*' SR0 (-2.286 1.1938);
+Layer 25;
+Change Size 1.27;
+Change Ratio 6;
+Change Align bottom left;
+Text '>NAME' SR0 (-2.8702 -0.635);
+Layer 27;
+Change Size 1.27;
+Change Ratio 6;
+Change Align bottom left;
+Text '>VALUE' SR0 (-3.4544 -0.635);
+
+Edit 'FXO-HC735-12.pac';
+Description '';
+Layer 1;
+Smd 'E/D' 2 1.8 -0 R90 (0 0);
+Layer 1;
+Smd 'GND' 2 1.8 -0 R90 (5.08 0);
+Layer 1;
+Smd 'OUT' 2 1.8 -0 R90 (5.08 4.2);
+Layer 1;
+Smd 'VDD' 2 1.8 -0 R90 (0 4.2);
+Layer 21;
+Wire  0.127 (-1.3 5) (6.3 5) (6.3 -0.8) (-1.3 -0.8) \
+      (-1.3 5);
+Layer 21;
+Circle 0.127 (-1.7 -1.2) (-1.47639375 -1.2);
+Layer 25;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '>NAME' R90 (-1.9 -0.9);
+
+Edit 'TC2030-MCP-NL.pac';
+Description '\
+<B>TAG-CONNECT ICSP Connector</B><BR><I>Manufacturer:</I> <a href="www.tag-connect.com">Tag-Connect</a><BR>\n\
+<BR>Cable for easy In-Circuit Serial Programming. Modified for SPY-BI-TAG.<BR>\n\
+\n\
+<TABLE cellspacing=0 cellpadding=0 border=0>\n\
+<TR><TD width=20></TD><TD>\n\
+<TABLE cellspacing=0 cellpadding=1 border=1>\n\
+<TR bgcolor=silver><TD align=center>PAD</TD><TD align=center>Description</TD></TR>\n\
+<TR><TD align=center>1</TD><TD>SBWTDIO</TD></TR>\n\
+<TR><TD align=center>2</TD><TD>VCC OUT</TD></TR>\n\
+<TR><TD align=center>3</TD><TD>TCK</TD></TR>\n\
+<TR><TD align=center>4</TD><TD>VCC IN</TD></TR>\n\
+<TR><TD align=center>5</TD><TD>VSS</TD></TR>\n\
+<TR><TD align=center>6</TD><TD>SBWTCK</TD></TR>\n\
+</TABLE>\n\
+</TD></TR></TABLE><BR><BR>\n\
+\n\
+©2009 ROFA.cz - modified by Greg Larmore&#8249;larmoreg@gmail.com&#8250;';
+Layer 1;
+Smd '2' 0.7874 0.7874 -100 R0 NOCREAM (1.27 0.635);
+Layer 1;
+Smd '4' 0.7874 0.7874 -100 R0 NOCREAM (2.54 0.635);
+Layer 1;
+Smd '6' 0.7874 0.7874 -100 R0 NOCREAM (3.81 0.635);
+Layer 1;
+Smd '5' 0.7874 0.7874 -100 R0 NOCREAM (3.81 -0.635);
+Layer 1;
+Smd '3' 0.7874 0.7874 -100 R0 NOCREAM (2.54 -0.635);
+Layer 1;
+Smd '1' 0.7874 0.7874 -100 R0 NOCREAM (1.27 -0.635);
+Layer 25;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '>name' R0 (-0.635 1.27);
+Hole 0.889 (0 0);
+Hole 0.889 (5.08 -1.016);
+Hole 0.889 (5.08 1.016);
+Layer 39;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.0254  (1.27 -0.2413) (1.6637 -0.2413) (1.6637 -0.635) (2.1463 -0.635) \
+      (2.1463 -0.2413) (2.9337 -0.2413) (2.9337 -0.635) (3.4163 -0.635) \
+      (3.4163 -0.2413) (3.81 -0.2413) (3.81 0.2413) (3.4163 0.2413) \
+      (3.4163 0.635) (2.9337 0.635) (2.9337 0.2413) (2.1463 0.2413) \
+      (2.1463 0.635) (1.6637 0.635) (1.6637 0.2413) (1.27 0.2413) \
+      (1.27 -0.2413);
+
+Edit 'TC2030-MCP-NL-CP.pac';
+Description '\
+<B>TAG-CONNECT ICSP Connector</B><I>- with optional copper pads for steel alignment pins</I><BR><I>Manufacturer:</I> <a href="http://www.tag-connect.com">Tag-Connect</a><BR>\n\
+<BR>Cable for easy In-Circuit Serial Programming. Modified for SPY-BI-TAG.\n\
+<p>\n\
+<b>NOTE:</b> Eagle''s default spacing for drill holes does not leave sufficent room for routing traces for this footprint and should be adjusted. <br>\n\
+This setting can be found in the board layout editor under the Edit menu.  Select "Design Rules" and then the Distance tab.  8 mils for Drill/Hole works well.\n\
+<br>\n\
+<TABLE cellspacing=0 cellpadding=0 border=0>\n\
+<TR><TD width=20></TD><TD>\n\
+<TABLE cellspacing=0 cellpadding=1 border=1>\n\
+<TR bgcolor=silver><TD align=center>PAD</TD><TD align=center>Description</TD></TR>\n\
+<TR><TD align=center>1</TD><TD>SBWTDIO</TD></TR>\n\
+<TR><TD align=center>2</TD><TD>VCC OUT</TD></TR>\n\
+<TR><TD align=center>3</TD><TD>TCK</TD></TR>\n\
+<TR><TD align=center>4</TD><TD>VCC IN</TD></TR>\n\
+<TR><TD align=center>5</TD><TD>VSS</TD></TR>\n\
+<TR><TD align=center>6</TD><TD>SBWTCK</TD></TR>\n\
+</TABLE>\n\
+</TD></TR></TABLE><BR><BR>\n\
+\n\
+<B>Note:</B> Suitable Receptacle pins are 0295-0-15-xx-06-xx-10-0 series from <a href="www.mill-max.com">Mill-Max</a><BR><BR>\n\
+\n\
+©2009 ROFA.cz - modified by Greg Larmore &#8249;larmoreg@gmail.com&#8250;';
+Layer 1;
+Smd '2' 0.7874 0.7874 -100 R0 NOCREAM (1.27 0.635);
+Layer 1;
+Smd '4' 0.7874 0.7874 -100 R0 NOCREAM (2.54 0.635);
+Layer 1;
+Smd '6' 0.7874 0.7874 -100 R0 NOCREAM (3.81 0.635);
+Layer 1;
+Smd '5' 0.7874 0.7874 -100 R0 NOCREAM (3.81 -0.635);
+Layer 1;
+Smd '3' 0.7874 0.7874 -100 R0 NOCREAM (2.54 -0.635);
+Layer 1;
+Smd '1' 0.7874 0.7874 -100 R0 NOCREAM (1.27 -0.635);
+Layer 25;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '>name' R0 (-1.27 1.905);
+Hole 1.6 (0 0);
+Hole 1.6 (5.08 1.016);
+Hole 1.6 (5.08 -1.016);
+Layer 39;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.0254  (1.27 -0.2413) (1.6637 -0.2413) (1.6637 -0.635) (2.1463 -0.635) \
+      (2.1463 -0.2413) (2.9337 -0.2413) (2.9337 -0.635) (3.4163 -0.635) \
+      (3.4163 -0.2413) (3.81 -0.2413) (3.81 0.2413) (3.4163 0.2413) \
+      (3.4163 0.635) (2.9337 0.635) (2.9337 0.2413) (2.1463 0.2413) \
+      (2.1463 0.635) (1.6637 0.635) (1.6637 0.2413) (1.27 0.2413) \
+      (1.27 -0.2413);
+Layer 16;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.0254  (3.556 -1.016) +90 (5.08 -2.54) +90 (6.604 -1.016) (6.604 1.016) +90 \
+      (5.08 2.54) +90 (3.556 1.016) (3.556 -1.016);
+Layer 16;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.0254  (-1.524 0) -90 (0 1.524) -90 (1.524 0) -90 (0 -1.524) -90 \
+      (-1.524 0);
+Layer 30;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.254  (3.556 -1.016) +90 (5.08 -2.54) +90 (6.604 -1.016) (6.604 1.016) +90 \
+      (5.08 2.54) +90 (3.556 1.016) (3.556 -1.016);
+Layer 30;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.254  (-1.524 0) -90 (0 1.524) -90 (1.524 0) -90 (0 -1.524) -90 \
+      (-1.524 0);
+
+Edit 'TC2030-MCP.pac';
+Description '\
+<b>TAG-CONNECT ICSP Connector</b> - Legged version<BR><I>Manufacturer:</I> <a href="http://www.tag-connect.com">Tag-Connect</a>\n\
+<p>\n\
+Cable for easy In-Circuit Serial Programming. Modified for SPY-BI-TAG.\n\
+<p>\n\
+<b>NOTE:</b> Eagle''s default spacing for drill holes does not leave sufficent room for routing traces for this footprint and should be adjusted. <br>\n\
+This setting can be found in the board layout editor under the Edit menu.  Select "Design Rules" and then the Distance tab.  8 mils for Drill/Hole works well.\n\
+<br>\n\
+<TABLE cellspacing=0 cellpadding=0 border=0>\n\
+<TR><TD width=20></TD><TD>\n\
+<TABLE cellspacing=0 cellpadding=1 border=1>\n\
+<TR bgcolor=silver><TD align=center>PAD</TD><TD align=center>Description</TD></TR>\n\
+<TR><TD align=center>1</TD><TD>SBWTDIO</TD></TR>\n\
+<TR><TD align=center>2</TD><TD>VCC OUT</TD></TR>\n\
+<TR><TD align=center>3</TD><TD>TCK</TD></TR>\n\
+<TR><TD align=center>4</TD><TD>VCC IN</TD></TR>\n\
+<TR><TD align=center>5</TD><TD>VSS</TD></TR>\n\
+<TR><TD align=center>6</TD><TD>SBWTCK</TD></TR>\n\
+</TABLE>\n\
+</TD></TR></TABLE><BR><BR>\n\
+©2009 ROFA.cz - modified by Greg Larmore &#8249;larmoreg@gmail.com&#8250;';
+Layer 1;
+Smd '2' 0.7874 0.7874 -100 R0 NOCREAM (1.27 0.635);
+Layer 1;
+Smd '4' 0.7874 0.7874 -100 R0 NOCREAM (2.54 0.635);
+Layer 1;
+Smd '6' 0.7874 0.7874 -100 R0 NOCREAM (3.81 0.635);
+Layer 1;
+Smd '5' 0.7874 0.7874 -100 R0 NOCREAM (3.81 -0.635);
+Layer 1;
+Smd '3' 0.7874 0.7874 -100 R0 NOCREAM (2.54 -0.635);
+Layer 1;
+Smd '1' 0.7874 0.7874 -100 R0 NOCREAM (1.27 -0.635);
+Layer 25;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '>name' R90 (-1.27 -2.54);
+Hole 0.889 (0 0);
+Hole 0.889 (5.08 -1.016);
+Hole 0.889 (5.08 1.016);
+Hole 2.3748 (0 2.54);
+Hole 2.3748 (0 -2.54);
+Hole 2.3748 (3.175 -2.54);
+Hole 2.3748 (3.175 2.54);
+Layer 39;
+Change Spacing 1.27;
+Change Pour solid;
+Polygon 0.0254  (1.27 -0.2413) (1.6637 -0.2413) (1.6637 -0.635) (2.1463 -0.635) \
+      (2.1463 -0.2413) (2.9337 -0.2413) (2.9337 -0.635) (3.4163 -0.635) \
+      (3.4163 -0.2413) (3.81 -0.2413) (3.81 0.2413) (3.4163 0.2413) \
+      (3.4163 0.635) (2.9337 0.635) (2.9337 0.2413) (2.1463 0.2413) \
+      (2.1463 0.635) (1.6637 0.635) (1.6637 0.2413) (1.27 0.2413) \
+      (1.27 -0.2413);
+
+Edit 'BEAGLEBONE_SHIELD.pac';
+Description '';
+Layer 20;
+Wire  0.2032 (54.61 73.66) (54.61 14.605);
+Layer 51;
+Change Style shortdash;
+Wire  0.2032 (54.61 13.335) (54.61 6.35);
+Layer 20;
+Change Style continuous;
+Wire  0.127 (12.7 86.36) +90 (0 73.66);
+Wire  0.127 (54.61 73.66) +90 (41.91 86.36);
+Wire  0.127 (12.7 86.36) (41.91 86.36);
+Layer 21;
+Wire  0.2032 (5.08 17.78) (5.715 18.415) (5.715 19.685) (5.08 20.32) \
+      (5.715 20.955) (5.715 22.225) (5.08 22.86) (5.715 23.495) \
+      (5.715 24.765) (5.08 25.4) (5.715 26.035) (5.715 27.305) \
+      (5.08 27.94) (5.715 28.575) (5.715 29.845) (5.08 30.48) \
+      (5.715 31.115) (5.715 32.385) (5.08 33.02);
+Wire  0.2032 (5.08 17.78) (1.27 17.78) (0.635 18.415) (0.635 19.685) \
+      (1.27 20.32) (0.635 20.955) (0.635 22.225) (1.27 22.86) \
+      (0.635 23.495) (0.635 24.765) (1.27 25.4) (0.635 26.035) \
+      (0.635 27.305) (1.27 27.94) (0.635 28.575) (0.635 29.845) \
+      (1.27 30.48) (0.635 31.115) (0.635 32.385) (1.27 33.02) \
+      (0.635 33.655) (0.635 34.925) (1.27 35.56) (0.635 36.195) \
+      (0.635 37.465) (1.27 38.1) (0.635 38.735) (0.635 40.005) \
+      (1.27 40.64) (0.635 41.275) (0.635 42.545) (1.27 43.18) \
+      (0.635 43.815) (0.635 45.085) (1.27 45.72) (0.635 46.355) \
+      (0.635 47.625);
+Wire  0.2032 (1.27 48.26) (0.635 47.625);
+Wire  0.2032 (1.27 48.26) (0.635 48.895);
+Wire  0.2032 (0.635 50.165) (0.635 48.895);
+Wire  0.2032 (0.635 50.165) (1.27 50.8) (0.635 51.435);
+Wire  0.2032 (0.635 52.705) (0.635 51.435);
+Wire  0.2032 (0.635 52.705) (1.27 53.34) (0.635 53.975);
+Wire  0.2032 (0.635 55.245) (0.635 53.975);
+Wire  0.2032 (0.635 55.245) (1.27 55.88) (0.635 56.515);
+Wire  0.2032 (0.635 57.785) (0.635 56.515);
+Wire  0.2032 (0.635 57.785) (1.27 58.42);
+Wire  0.2032 (5.08 58.42) (5.715 57.785);
+Wire  0.2032 (5.715 56.515) (5.715 57.785);
+Wire  0.2032 (5.715 56.515) (5.08 55.88) (5.715 55.245);
+Wire  0.2032 (5.715 53.975) (5.715 55.245);
+Wire  0.2032 (5.715 53.975) (5.08 53.34) (5.715 52.705) (5.715 51.435);
+Wire  0.2032 (5.08 50.8) (5.715 51.435);
+Wire  0.2032 (5.08 50.8) (5.715 50.165) (5.715 48.895);
+Wire  0.2032 (5.08 48.26) (5.715 48.895);
+Wire  0.2032 (5.08 48.26) (5.715 47.625) (5.715 46.355);
+Wire  0.2032 (5.08 45.72) (5.715 46.355);
+Wire  0.2032 (5.08 45.72) (5.715 45.085) (5.715 43.815);
+Wire  0.2032 (5.08 43.18) (5.715 43.815);
+Wire  0.2032 (5.08 43.18) (5.715 42.545) (5.715 41.275);
+Wire  0.2032 (5.08 40.64) (5.715 41.275);
+Wire  0.2032 (5.08 40.64) (5.715 40.005) (5.715 38.735);
+Wire  0.2032 (5.08 38.1) (5.715 38.735);
+Wire  0.2032 (5.08 38.1) (5.715 37.465) (5.715 36.195);
+Wire  0.2032 (5.08 35.56) (5.715 36.195);
+Wire  0.2032 (5.08 35.56) (5.715 34.925) (5.715 33.655);
+Wire  0.2032 (5.08 33.02) (5.715 33.655);
+Wire  0.2032 (1.27 20.32) (5.08 20.32);
+Wire  0.2032 (1.27 22.86) (5.08 22.86);
+Wire  0.2032 (1.27 25.4) (5.08 25.4);
+Wire  0.2032 (1.27 27.94) (5.08 27.94);
+Wire  0.2032 (1.27 30.48) (5.08 30.48);
+Wire  0.2032 (1.27 33.02) (5.08 33.02);
+Wire  0.2032 (1.27 35.56) (5.08 35.56);
+Wire  0.2032 (1.27 38.1) (5.08 38.1);
+Wire  0.2032 (1.27 40.64) (5.08 40.64);
+Wire  0.2032 (1.27 43.18) (5.08 43.18);
+Wire  0.2032 (1.27 45.72) (5.08 45.72);
+Wire  0.2032 (1.27 48.26) (5.08 48.26);
+Wire  0.2032 (1.27 50.8) (5.08 50.8);
+Wire  0.2032 (1.27 53.34) (5.08 53.34);
+Wire  0.2032 (1.27 55.88) (5.08 55.88);
+Wire  0.2032 (1.27 58.42) (5.08 58.42);
+Wire  0.2032 (1.27 58.42) (0.635 59.055);
+Wire  0.2032 (0.635 60.325) (0.635 59.055);
+Wire  0.2032 (0.635 60.325) (1.27 60.96);
+Wire  0.2032 (5.08 60.96) (5.715 60.325);
+Wire  0.2032 (5.715 59.055) (5.715 60.325);
+Wire  0.2032 (5.715 59.055) (5.08 58.42);
+Wire  0.2032 (1.27 60.96) (5.08 60.96);
+Wire  0.2032 (1.27 60.96) (0.635 61.595);
+Wire  0.2032 (0.635 62.865) (0.635 61.595);
+Wire  0.2032 (0.635 62.865) (1.27 63.5);
+Wire  0.2032 (5.08 63.5) (5.715 62.865);
+Wire  0.2032 (5.715 61.595) (5.715 62.865);
+Wire  0.2032 (5.715 61.595) (5.08 60.96);
+Wire  0.2032 (1.27 63.5) (5.08 63.5);
+Wire  0.2032 (1.27 63.5) (0.635 64.135);
+Wire  0.2032 (0.635 65.405) (0.635 64.135);
+Wire  0.2032 (0.635 65.405) (1.27 66.04);
+Wire  0.2032 (5.08 66.04) (5.715 65.405);
+Wire  0.2032 (5.715 64.135) (5.715 65.405);
+Wire  0.2032 (5.715 64.135) (5.08 63.5);
+Wire  0.2032 (1.27 66.04) (5.08 66.04);
+Wire  0.2032 (1.27 66.04) (0.635 66.675);
+Wire  0.2032 (0.635 67.945) (0.635 66.675);
+Wire  0.2032 (0.635 67.945) (1.27 68.58);
+Wire  0.2032 (5.08 68.58) (5.715 67.945);
+Wire  0.2032 (5.715 66.675) (5.715 67.945);
+Wire  0.2032 (5.715 66.675) (5.08 66.04);
+Wire  0.2032 (1.27 68.58) (5.08 68.58);
+Wire  0.2032 (1.27 68.58) (0.635 69.215);
+Wire  0.2032 (0.635 70.485) (0.635 69.215);
+Wire  0.2032 (0.635 70.485) (1.27 71.12);
+Wire  0.2032 (5.08 71.12) (5.715 70.485);
+Wire  0.2032 (5.715 69.215) (5.715 70.485);
+Wire  0.2032 (5.715 69.215) (5.08 68.58);
+Wire  0.2032 (1.27 71.12) (5.08 71.12);
+Wire  0.2032 (1.27 71.12) (0.635 71.755);
+Wire  0.2032 (0.635 73.025) (0.635 71.755);
+Wire  0.2032 (0.635 73.025) (1.27 73.66);
+Wire  0.2032 (5.08 73.66) (5.715 73.025);
+Wire  0.2032 (5.715 71.755) (5.715 73.025);
+Wire  0.2032 (5.715 71.755) (5.08 71.12);
+Wire  0.2032 (1.27 73.66) (5.08 73.66);
+Wire  0.2032 (1.27 73.66) (0.635 74.295);
+Wire  0.2032 (0.635 75.565) (0.635 74.295);
+Wire  0.2032 (0.635 75.565) (1.27 76.2);
+Wire  0.2032 (5.08 76.2) (5.715 75.565);
+Wire  0.2032 (5.715 74.295) (5.715 75.565);
+Wire  0.2032 (5.715 74.295) (5.08 73.66);
+Wire  0.2032 (1.27 76.2) (5.08 76.2);
+Wire  0.2032 (53.34 17.78) (53.975 18.415) (53.975 19.685) (53.34 20.32) \
+      (53.975 20.955) (53.975 22.225) (53.34 22.86) (53.975 23.495) \
+      (53.975 24.765) (53.34 25.4) (53.975 26.035) (53.975 27.305) \
+      (53.34 27.94) (53.975 28.575) (53.975 29.845) (53.34 30.48) \
+      (53.975 31.115) (53.975 32.385) (53.34 33.02);
+Wire  0.2032 (53.34 17.78) (49.53 17.78) (48.895 18.415) (48.895 19.685) \
+      (49.53 20.32) (48.895 20.955) (48.895 22.225) (49.53 22.86) \
+      (48.895 23.495) (48.895 24.765) (49.53 25.4) (48.895 26.035) \
+      (48.895 27.305) (49.53 27.94) (48.895 28.575) (48.895 29.845) \
+      (49.53 30.48) (48.895 31.115) (48.895 32.385) (49.53 33.02) \
+      (48.895 33.655) (48.895 34.925) (49.53 35.56) (48.895 36.195) \
+      (48.895 37.465) (49.53 38.1) (48.895 38.735) (48.895 40.005) \
+      (49.53 40.64) (48.895 41.275) (48.895 42.545) (49.53 43.18) \
+      (48.895 43.815) (48.895 45.085) (49.53 45.72) (48.895 46.355) \
+      (48.895 47.625);
+Wire  0.2032 (49.53 48.26) (48.895 47.625);
+Wire  0.2032 (49.53 48.26) (48.895 48.895);
+Wire  0.2032 (48.895 50.165) (48.895 48.895);
+Wire  0.2032 (48.895 50.165) (49.53 50.8) (48.895 51.435);
+Wire  0.2032 (48.895 52.705) (48.895 51.435);
+Wire  0.2032 (48.895 52.705) (49.53 53.34) (48.895 53.975);
+Wire  0.2032 (48.895 55.245) (48.895 53.975);
+Wire  0.2032 (48.895 55.245) (49.53 55.88) (48.895 56.515);
+Wire  0.2032 (48.895 57.785) (48.895 56.515);
+Wire  0.2032 (48.895 57.785) (49.53 58.42);
+Wire  0.2032 (53.34 58.42) (53.975 57.785);
+Wire  0.2032 (53.975 56.515) (53.975 57.785);
+Wire  0.2032 (53.975 56.515) (53.34 55.88) (53.975 55.245);
+Wire  0.2032 (53.975 53.975) (53.975 55.245);
+Wire  0.2032 (53.975 53.975) (53.34 53.34) (53.975 52.705) (53.975 51.435);
+Wire  0.2032 (53.34 50.8) (53.975 51.435);
+Wire  0.2032 (53.34 50.8) (53.975 50.165) (53.975 48.895);
+Wire  0.2032 (53.34 48.26) (53.975 48.895);
+Wire  0.2032 (53.34 48.26) (53.975 47.625) (53.975 46.355);
+Wire  0.2032 (53.34 45.72) (53.975 46.355);
+Wire  0.2032 (53.34 45.72) (53.975 45.085) (53.975 43.815);
+Wire  0.2032 (53.34 43.18) (53.975 43.815);
+Wire  0.2032 (53.34 43.18) (53.975 42.545) (53.975 41.275);
+Wire  0.2032 (53.34 40.64) (53.975 41.275);
+Wire  0.2032 (53.34 40.64) (53.975 40.005) (53.975 38.735);
+Wire  0.2032 (53.34 38.1) (53.975 38.735);
+Wire  0.2032 (53.34 38.1) (53.975 37.465) (53.975 36.195);
+Wire  0.2032 (53.34 35.56) (53.975 36.195);
+Wire  0.2032 (53.34 35.56) (53.975 34.925) (53.975 33.655);
+Wire  0.2032 (53.34 33.02) (53.975 33.655);
+Wire  0.2032 (49.53 20.32) (53.34 20.32);
+Wire  0.2032 (49.53 22.86) (53.34 22.86);
+Wire  0.2032 (49.53 25.4) (53.34 25.4);
+Wire  0.2032 (49.53 27.94) (53.34 27.94);
+Wire  0.2032 (49.53 30.48) (53.34 30.48);
+Wire  0.2032 (49.53 33.02) (53.34 33.02);
+Wire  0.2032 (49.53 35.56) (53.34 35.56);
+Wire  0.2032 (49.53 38.1) (53.34 38.1);
+Wire  0.2032 (49.53 40.64) (53.34 40.64);
+Wire  0.2032 (49.53 43.18) (53.34 43.18);
+Wire  0.2032 (49.53 45.72) (53.34 45.72);
+Wire  0.2032 (49.53 48.26) (53.34 48.26);
+Wire  0.2032 (49.53 50.8) (53.34 50.8);
+Wire  0.2032 (49.53 53.34) (53.34 53.34);
+Wire  0.2032 (49.53 55.88) (53.34 55.88);
+Wire  0.2032 (49.53 58.42) (53.34 58.42);
+Wire  0.2032 (49.53 58.42) (48.895 59.055);
+Wire  0.2032 (48.895 60.325) (48.895 59.055);
+Wire  0.2032 (48.895 60.325) (49.53 60.96);
+Wire  0.2032 (53.34 60.96) (53.975 60.325);
+Wire  0.2032 (53.975 59.055) (53.975 60.325);
+Wire  0.2032 (53.975 59.055) (53.34 58.42);
+Wire  0.2032 (49.53 60.96) (53.34 60.96);
+Wire  0.2032 (49.53 60.96) (48.895 61.595);
+Wire  0.2032 (48.895 62.865) (48.895 61.595);
+Wire  0.2032 (48.895 62.865) (49.53 63.5);
+Wire  0.2032 (53.34 63.5) (53.975 62.865);
+Wire  0.2032 (53.975 61.595) (53.975 62.865);
+Wire  0.2032 (53.975 61.595) (53.34 60.96);
+Wire  0.2032 (49.53 63.5) (53.34 63.5);
+Wire  0.2032 (49.53 63.5) (48.895 64.135);
+Wire  0.2032 (48.895 65.405) (48.895 64.135);
+Wire  0.2032 (48.895 65.405) (49.53 66.04);
+Wire  0.2032 (53.34 66.04) (53.975 65.405);
+Wire  0.2032 (53.975 64.135) (53.975 65.405);
+Wire  0.2032 (53.975 64.135) (53.34 63.5);
+Wire  0.2032 (49.53 66.04) (53.34 66.04);
+Wire  0.2032 (49.53 66.04) (48.895 66.675);
+Wire  0.2032 (48.895 67.945) (48.895 66.675);
+Wire  0.2032 (48.895 67.945) (49.53 68.58);
+Wire  0.2032 (53.34 68.58) (53.975 67.945);
+Wire  0.2032 (53.975 66.675) (53.975 67.945);
+Wire  0.2032 (53.975 66.675) (53.34 66.04);
+Wire  0.2032 (49.53 68.58) (53.34 68.58);
+Wire  0.2032 (49.53 68.58) (48.895 69.215);
+Wire  0.2032 (48.895 70.485) (48.895 69.215);
+Wire  0.2032 (48.895 70.485) (49.53 71.12);
+Wire  0.2032 (53.34 71.12) (53.975 70.485);
+Wire  0.2032 (53.975 69.215) (53.975 70.485);
+Wire  0.2032 (53.975 69.215) (53.34 68.58);
+Wire  0.2032 (49.53 71.12) (53.34 71.12);
+Wire  0.2032 (49.53 71.12) (48.895 71.755);
+Wire  0.2032 (48.895 73.025) (48.895 71.755);
+Wire  0.2032 (48.895 73.025) (49.53 73.66);
+Wire  0.2032 (53.34 73.66) (53.975 73.025);
+Wire  0.2032 (53.975 71.755) (53.975 73.025);
+Wire  0.2032 (53.975 71.755) (53.34 71.12);
+Wire  0.2032 (49.53 73.66) (53.34 73.66);
+Wire  0.2032 (49.53 73.66) (48.895 74.295);
+Wire  0.2032 (48.895 75.565) (48.895 74.295);
+Wire  0.2032 (48.895 75.565) (49.53 76.2);
+Wire  0.2032 (53.34 76.2) (53.975 75.565);
+Wire  0.2032 (53.975 74.295) (53.975 75.565);
+Wire  0.2032 (53.975 74.295) (53.34 73.66);
+Wire  0.2032 (49.53 76.2) (53.34 76.2);
+Layer 51;
+Change Style shortdash;
+Wire  0.2032 (12.7 0) (48.26 0);
+Layer 20;
+Change Style continuous;
+Wire  0.2032 (0 73.66) (0 6.35) +90 (6.35 0) (12.7 0);
+Layer 51;
+Change Style shortdash;
+Wire  0.2032 (48.26 0) +90 (54.61 6.35);
+Change Drill 1;Pad '1' square 0 R90 (4.445 19.05);
+Change Drill 1;Pad '2' round 0 R90 (1.905 19.05);
+Change Drill 1;Pad '3' round 0 R90 (4.445 21.59);
+Change Drill 1;Pad '4' round 0 R90 (1.905 21.59);
+Change Drill 1;Pad '5' round 0 R90 (4.445 24.13);
+Change Drill 1;Pad '6' round 0 R90 (1.905 24.13);
+Change Drill 1;Pad '7' round 0 R90 (4.445 26.67);
+Change Drill 1;Pad '8' round 0 R90 (1.905 26.67);
+Change Drill 1;Pad '9' round 0 R90 (4.445 29.21);
+Change Drill 1;Pad '10' round 0 R90 (1.905 29.21);
+Change Drill 1;Pad '11' round 0 R90 (4.445 31.75);
+Change Drill 1;Pad '12' round 0 R90 (1.905 31.75);
+Change Drill 1;Pad '13' round 0 R90 (4.445 34.29);
+Change Drill 1;Pad '14' round 0 R90 (1.905 34.29);
+Change Drill 1;Pad '15' round 0 R90 (4.445 36.83);
+Change Drill 1;Pad '16' round 0 R90 (1.905 36.83);
+Change Drill 1;Pad '17' round 0 R90 (4.445 39.37);
+Change Drill 1;Pad '18' round 0 R90 (1.905 39.37);
+Change Drill 1;Pad '19' round 0 R90 (4.445 41.91);
+Change Drill 1;Pad '20' round 0 R90 (1.905 41.91);
+Change Drill 1;Pad '21' round 0 R90 (4.445 44.45);
+Change Drill 1;Pad '22' round 0 R90 (1.905 44.45);
+Change Drill 1;Pad '23' round 0 R90 (4.445 46.99);
+Change Drill 1;Pad '24' round 0 R90 (1.905 46.99);
+Change Drill 1;Pad '25' round 0 R90 (4.445 49.53);
+Change Drill 1;Pad '26' round 0 R90 (1.905 49.53);
+Change Drill 1;Pad '27' round 0 R90 (4.445 52.07);
+Change Drill 1;Pad '28' round 0 R90 (1.905 52.07);
+Change Drill 1;Pad '29' round 0 R90 (4.445 54.61);
+Change Drill 1;Pad '30' round 0 R90 (1.905 54.61);
+Change Drill 1;Pad '31' round 0 R90 (4.445 57.15);
+Change Drill 1;Pad '32' round 0 R90 (1.905 57.15);
+Change Drill 1;Pad '33' round 0 R90 (4.445 59.69);
+Change Drill 1;Pad '34' round 0 R90 (1.905 59.69);
+Change Drill 1;Pad '35' round 0 R90 (4.445 62.23);
+Change Drill 1;Pad '36' round 0 R90 (1.905 62.23);
+Change Drill 1;Pad '37' round 0 R90 (4.445 64.77);
+Change Drill 1;Pad '38' round 0 R90 (1.905 64.77);
+Change Drill 1;Pad '39' round 0 R90 (4.445 67.31);
+Change Drill 1;Pad '40' round 0 R90 (1.905 67.31);
+Change Drill 1;Pad '41' round 0 R90 (4.445 69.85);
+Change Drill 1;Pad '42' round 0 R90 (1.905 69.85);
+Change Drill 1;Pad '43' round 0 R90 (4.445 72.39);
+Change Drill 1;Pad '44' round 0 R90 (1.905 72.39);
+Change Drill 1;Pad '45' round 0 R90 (4.445 74.93);
+Change Drill 1;Pad '46' round 0 R90 (1.905 74.93);
+Change Drill 1;Pad '47' square 0 R90 (52.705 19.05);
+Change Drill 1;Pad '48' round 0 R90 (50.165 19.05);
+Change Drill 1;Pad '49' round 0 R90 (52.705 21.59);
+Change Drill 1;Pad '50' round 0 R90 (50.165 21.59);
+Change Drill 1;Pad '51' round 0 R90 (52.705 24.13);
+Change Drill 1;Pad '52' round 0 R90 (50.165 24.13);
+Change Drill 1;Pad '53' round 0 R90 (52.705 26.67);
+Change Drill 1;Pad '54' round 0 R90 (50.165 26.67);
+Change Drill 1;Pad '55' round 0 R90 (52.705 29.21);
+Change Drill 1;Pad '56' round 0 R90 (50.165 29.21);
+Change Drill 1;Pad '57' round 0 R90 (52.705 31.75);
+Change Drill 1;Pad '58' round 0 R90 (50.165 31.75);
+Change Drill 1;Pad '59' round 0 R90 (52.705 34.29);
+Change Drill 1;Pad '60' round 0 R90 (50.165 34.29);
+Change Drill 1;Pad '61' round 0 R90 (52.705 36.83);
+Change Drill 1;Pad '62' round 0 R90 (50.165 36.83);
+Change Drill 1;Pad '63' round 0 R90 (52.705 39.37);
+Change Drill 1;Pad '64' round 0 R90 (50.165 39.37);
+Change Drill 1;Pad '65' round 0 R90 (52.705 41.91);
+Change Drill 1;Pad '66' round 0 R90 (50.165 41.91);
+Change Drill 1;Pad '67' round 0 R90 (52.705 44.45);
+Change Drill 1;Pad '68' round 0 R90 (50.165 44.45);
+Change Drill 1;Pad '69' round 0 R90 (52.705 46.99);
+Change Drill 1;Pad '70' round 0 R90 (50.165 46.99);
+Change Drill 1;Pad '71' round 0 R90 (52.705 49.53);
+Change Drill 1;Pad '72' round 0 R90 (50.165 49.53);
+Change Drill 1;Pad '73' round 0 R90 (52.705 52.07);
+Change Drill 1;Pad '74' round 0 R90 (50.165 52.07);
+Change Drill 1;Pad '75' round 0 R90 (52.705 54.61);
+Change Drill 1;Pad '76' round 0 R90 (50.165 54.61);
+Change Drill 1;Pad '77' round 0 R90 (52.705 57.15);
+Change Drill 1;Pad '78' round 0 R90 (50.165 57.15);
+Change Drill 1;Pad '79' round 0 R90 (52.705 59.69);
+Change Drill 1;Pad '80' round 0 R90 (50.165 59.69);
+Change Drill 1;Pad '81' round 0 R90 (52.705 62.23);
+Change Drill 1;Pad '82' round 0 R90 (50.165 62.23);
+Change Drill 1;Pad '83' round 0 R90 (52.705 64.77);
+Change Drill 1;Pad '84' round 0 R90 (50.165 64.77);
+Change Drill 1;Pad '85' round 0 R90 (52.705 67.31);
+Change Drill 1;Pad '86' round 0 R90 (50.165 67.31);
+Change Drill 1;Pad '87' round 0 R90 (52.705 69.85);
+Change Drill 1;Pad '88' round 0 R90 (50.165 69.85);
+Change Drill 1;Pad '89' round 0 R90 (52.705 72.39);
+Change Drill 1;Pad '90' round 0 R90 (50.165 72.39);
+Change Drill 1;Pad '91' round 0 R90 (52.705 74.93);
+Change Drill 1;Pad '92' round 0 R90 (50.165 74.93);
+Layer 25;
+Change Size 1.27;
+Change Ratio 18;
+Change Align bottom left;
+Text '>NAME' R90 (7.62 17.78);
+Layer 27;
+Change Size 0.4064;
+Change Ratio 10;
+Change Align bottom left;
+Text '>VALUE' R90 (8.636 17.78);
+Layer 25;
+Change Size 1.27;
+Change Ratio 18;
+Change Align bottom left;
+Text '>NAME' R90 (47.244 17.78);
+Layer 27;
+Change Size 0.4064;
+Change Ratio 10;
+Change Align bottom left;
+Text '>VALUE' R90 (48.26 17.78);
+Layer 51;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text 'P8' R0 (2.54 77.47);
+Layer 51;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text 'P9' R0 (50.8 77.47);
+Layer 51;
+Rect R90 (4.191 18.796) (4.699 19.304);
+Layer 51;
+Rect R90 (1.651 18.796) (2.159 19.304);
+Layer 51;
+Rect R90 (1.651 21.336) (2.159 21.844);
+Layer 51;
+Rect R90 (4.191 21.336) (4.699 21.844);
+Layer 51;
+Rect R90 (1.651 23.876) (2.159 24.384);
+Layer 51;
+Rect R90 (4.191 23.876) (4.699 24.384);
+Layer 51;
+Rect R90 (1.651 26.416) (2.159 26.924);
+Layer 51;
+Rect R90 (1.651 28.956) (2.159 29.464);
+Layer 51;
+Rect R90 (1.651 31.496) (2.159 32.004);
+Layer 51;
+Rect R90 (4.191 26.416) (4.699 26.924);
+Layer 51;
+Rect R90 (4.191 28.956) (4.699 29.464);
+Layer 51;
+Rect R90 (4.191 31.496) (4.699 32.004);
+Layer 51;
+Rect R90 (1.651 34.036) (2.159 34.544);
+Layer 51;
+Rect R90 (4.191 34.036) (4.699 34.544);
+Layer 51;
+Rect R90 (1.651 36.576) (2.159 37.084);
+Layer 51;
+Rect R90 (4.191 36.576) (4.699 37.084);
+Layer 51;
+Rect R90 (1.651 39.116) (2.159 39.624);
+Layer 51;
+Rect R90 (4.191 39.116) (4.699 39.624);
+Layer 51;
+Rect R90 (1.651 41.656) (2.159 42.164);
+Layer 51;
+Rect R90 (4.191 41.656) (4.699 42.164);
+Layer 51;
+Rect R90 (1.651 44.196) (2.159 44.704);
+Layer 51;
+Rect R90 (4.191 44.196) (4.699 44.704);
+Layer 51;
+Rect R90 (1.651 46.736) (2.159 47.244);
+Layer 51;
+Rect R90 (4.191 46.736) (4.699 47.244);
+Layer 51;
+Rect R90 (1.651 49.276) (2.159 49.784);
+Layer 51;
+Rect R90 (4.191 49.276) (4.699 49.784);
+Layer 51;
+Rect R90 (1.651 51.816) (2.159 52.324);
+Layer 51;
+Rect R90 (4.191 51.816) (4.699 52.324);
+Layer 51;
+Rect R90 (1.651 54.356) (2.159 54.864);
+Layer 51;
+Rect R90 (4.191 54.356) (4.699 54.864);
+Layer 51;
+Rect R90 (1.651 56.896) (2.159 57.404);
+Layer 51;
+Rect R90 (4.191 56.896) (4.699 57.404);
+Layer 51;
+Rect R90 (1.651 59.436) (2.159 59.944);
+Layer 51;
+Rect R90 (4.191 59.436) (4.699 59.944);
+Layer 51;
+Rect R90 (1.651 61.976) (2.159 62.484);
+Layer 51;
+Rect R90 (4.191 61.976) (4.699 62.484);
+Layer 51;
+Rect R90 (1.651 64.516) (2.159 65.024);
+Layer 51;
+Rect R90 (4.191 64.516) (4.699 65.024);
+Layer 51;
+Rect R90 (1.651 67.056) (2.159 67.564);
+Layer 51;
+Rect R90 (4.191 67.056) (4.699 67.564);
+Layer 51;
+Rect R90 (1.651 69.596) (2.159 70.104);
+Layer 51;
+Rect R90 (4.191 69.596) (4.699 70.104);
+Layer 51;
+Rect R90 (1.651 72.136) (2.159 72.644);
+Layer 51;
+Rect R90 (4.191 72.136) (4.699 72.644);
+Layer 51;
+Rect R90 (1.651 74.676) (2.159 75.184);
+Layer 51;
+Rect R90 (4.191 74.676) (4.699 75.184);
+Layer 51;
+Rect R90 (52.451 18.796) (52.959 19.304);
+Layer 51;
+Rect R90 (49.911 18.796) (50.419 19.304);
+Layer 51;
+Rect R90 (49.911 21.336) (50.419 21.844);
+Layer 51;
+Rect R90 (52.451 21.336) (52.959 21.844);
+Layer 51;
+Rect R90 (49.911 23.876) (50.419 24.384);
+Layer 51;
+Rect R90 (52.451 23.876) (52.959 24.384);
+Layer 51;
+Rect R90 (49.911 26.416) (50.419 26.924);
+Layer 51;
+Rect R90 (49.911 28.956) (50.419 29.464);
+Layer 51;
+Rect R90 (49.911 31.496) (50.419 32.004);
+Layer 51;
+Rect R90 (52.451 26.416) (52.959 26.924);
+Layer 51;
+Rect R90 (52.451 28.956) (52.959 29.464);
+Layer 51;
+Rect R90 (52.451 31.496) (52.959 32.004);
+Layer 51;
+Rect R90 (49.911 34.036) (50.419 34.544);
+Layer 51;
+Rect R90 (52.451 34.036) (52.959 34.544);
+Layer 51;
+Rect R90 (49.911 36.576) (50.419 37.084);
+Layer 51;
+Rect R90 (52.451 36.576) (52.959 37.084);
+Layer 51;
+Rect R90 (49.911 39.116) (50.419 39.624);
+Layer 51;
+Rect R90 (52.451 39.116) (52.959 39.624);
+Layer 51;
+Rect R90 (49.911 41.656) (50.419 42.164);
+Layer 51;
+Rect R90 (52.451 41.656) (52.959 42.164);
+Layer 51;
+Rect R90 (49.911 44.196) (50.419 44.704);
+Layer 51;
+Rect R90 (52.451 44.196) (52.959 44.704);
+Layer 51;
+Rect R90 (49.911 46.736) (50.419 47.244);
+Layer 51;
+Rect R90 (52.451 46.736) (52.959 47.244);
+Layer 51;
+Rect R90 (49.911 49.276) (50.419 49.784);
+Layer 51;
+Rect R90 (52.451 49.276) (52.959 49.784);
+Layer 51;
+Rect R90 (49.911 51.816) (50.419 52.324);
+Layer 51;
+Rect R90 (52.451 51.816) (52.959 52.324);
+Layer 51;
+Rect R90 (49.911 54.356) (50.419 54.864);
+Layer 51;
+Rect R90 (52.451 54.356) (52.959 54.864);
+Layer 51;
+Rect R90 (49.911 56.896) (50.419 57.404);
+Layer 51;
+Rect R90 (52.451 56.896) (52.959 57.404);
+Layer 51;
+Rect R90 (49.911 59.436) (50.419 59.944);
+Layer 51;
+Rect R90 (52.451 59.436) (52.959 59.944);
+Layer 51;
+Rect R90 (49.911 61.976) (50.419 62.484);
+Layer 51;
+Rect R90 (52.451 61.976) (52.959 62.484);
+Layer 51;
+Rect R90 (49.911 64.516) (50.419 65.024);
+Layer 51;
+Rect R90 (52.451 64.516) (52.959 65.024);
+Layer 51;
+Rect R90 (49.911 67.056) (50.419 67.564);
+Layer 51;
+Rect R90 (52.451 67.056) (52.959 67.564);
+Layer 51;
+Rect R90 (49.911 69.596) (50.419 70.104);
+Layer 51;
+Rect R90 (52.451 69.596) (52.959 70.104);
+Layer 51;
+Rect R90 (49.911 72.136) (50.419 72.644);
+Layer 51;
+Rect R90 (52.451 72.136) (52.959 72.644);
+Layer 51;
+Rect R90 (49.911 74.676) (50.419 75.184);
+Layer 51;
+Rect R90 (52.451 74.676) (52.959 75.184);
+Layer 39;
+Rect R0 (28.575 69.215) (43.815 86.36);
+Layer 39;
+Rect R0 (40.005 0) (50.165 11.43);
+Layer 39;
+Rect R0 (15.875 0) (34.29 17.78);
+Layer 20;
+Change Style continuous;
+Wire  0.2032 (19.05 20.955) (35.56 20.955) -90 (41.91 14.605);
+Wire  0.2032 (19.05 20.955) +90 (12.7 14.605) (12.7 0);
+Wire  0.2032 (54.61 14.605) (41.91 14.605);
+
+Edit 'CTS-219-2MST.pac';
+Description '';
+Layer 1;
+Smd 'P$1' 1.12 2.44 -0 R0 (0 0);
+Layer 1;
+Smd 'P$2' 1.12 2.44 -0 R0 (2.54 0);
+Layer 1;
+Smd 'P$3' 1.12 2.44 -0 R0 (2.54 8.61);
+Layer 1;
+Smd 'P$4' 1.12 2.44 -0 R0 (0 8.61);
+Layer 21;
+Wire  0.127 (-2 7.5) (4.5 7.5) (4.5 1) (-2 1) \
+      (-2 7.5);
+Layer 21;
+Circle 0.127 (-1.6 1.4) (-1.37639375 1.4);
+Layer 25;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '>NAME' R90 (-2.3 1.2);
+Layer 27;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '>VALUE' R90 (6.1 0.9);
+
+Edit 'TLV320AIC3120_RHB_32.dev';
+Prefix 'U';
+Description '';
+Value off;
+Add TLV320AIC3120_RHB_32 'A' next 0 (0 0);
+Package 'RHB32_3P45X3P45' '';
+Technology '';
+Technology '';
+Attribute DATASHEETURL 'http://www.ti.com/lit/gpn/TLV320AIC3120' variable;
+Attribute PIN_COUNT '32' variable;
+Attribute GENERIC_PART_NUMBER 'TLV320AIC3120' variable;
+Attribute DESCRIPTION 'Low-Power Audio CODEC With miniDSP and 2.5-W Mono Class-D Speaker Amplifier' variable;
+Attribute FAMILY_NAME 'Audio CODEC' variable;
+Attribute MANUFACTURER 'Texas Instruments' variable;
+Attribute INDUSTRY_STD_PKG_TYPE 'QFN' variable;
+Attribute VENDOR 'Texas Instruments' variable;
+Attribute MANUFACTURER_PART_NUMBER 'tlv320aic3120_rhb_32' variable;
+Attribute PACKAGE_DESIGNATOR 'RHB' variable;
+Connect  'A.*RESET' '31'  'A.AVDD' '17'  'A.AVSS' '16'  'A.BCLK' '7'  'A.DIN' '5' \
+         'A.DOUT' '4'  'A.DVDD' '3'  'A.DVSS' '18'  'A.EPAD' '33'  'A.GPIO1' '32'  'A.HPOUT' '27' \
+         'A.HPVDD' '28'  'A.HPVSS' '29'  'A.IOVDD' '2'  'A.IOVSS' '1'  'A.MCLK' '8'  'A.MIC1LM' '15' \
+         'A.MIC1LP' '13'  'A.MIC1RP' '14'  'A.MICBIAS' '12'  'A.NC' '30'  'A.SCL' '10'  'A.SDA' '9' \
+         'A.SPKM' '23'  'A.SPKM_2' '19'  'A.SPKP' '26'  'A.SPKP_2' '22'  'A.SPKVDD' '24'  'A.SPKVDD_2' '21' \
+         'A.SPKVSS' '25'  'A.SPKVSS_2' '20'  'A.VOL/MICDET' '11'  'A.WCLK' '6';
+
+Edit 'MSP430G2553_RHB_32.dev';
+Prefix 'U';
+Description '';
+Value off;
+Add MSP430G2553_RHB_32 'A' next 0 (0 0);
+Package 'RHB32_3P45X3P45' '';
+Technology '';
+Technology '';
+Attribute DATASHEETURL 'http://www.ti.com/lit/gpn/MSP430G2553' variable;
+Attribute PIN_COUNT '32' variable;
+Attribute GENERIC_PART_NUMBER 'MSP430G2553' variable;
+Attribute DESCRIPTION 'MSP430G2x53, MSP430G2x13 Mixed Signal Microcontroller' variable;
+Attribute FAMILY_NAME 'Value Line' variable;
+Attribute MANUFACTURER 'Texas Instruments' variable;
+Attribute INDUSTRY_STD_PKG_TYPE 'QFN' variable;
+Attribute VENDOR 'Texas Instruments' variable;
+Attribute MANUFACTURER_PART_NUMBER 'msp430g2553_rhb_32' variable;
+Attribute PACKAGE_DESIGNATOR 'RHB' variable;
+Connect  'A.*RST/NMI/SBWTDIO' '23'  'A.AVCC' '29'  'A.AVSS' '27'  'A.DVCC' '30'  'A.DVSS' '28' \
+         'A.EPAD' '33'  'A.NC' '32'  'A.NC_2' '8'  'A.P1.0/TA0CLK/ACLK/A0/CA0' '31'  'A.P1.1/TA0.0/UCA0RXD/UCA0SOMI/A1/CA1' '1'  'A.P1.2/TA0.1/UCA0TXD/UCA0SIMO/A2/CA2' '2' \
+         'A.P1.3/ADC10CLK/CAOUT/VREF-/VEREF-/A3/CA3' '3'  'A.P1.4/SMCLK/UCB0STE/UCA0CLK/VREF+/VEREF+/A4/CA4/TCK' '4'  'A.P1.5/TA0.0/UCB0CLK/UCA0STE/A5/CA5/TMS' '5'  'A.P1.6/TA0.1/UCB0SOMI/UCB0SCL/A6/CA6/TDI/TCLK' '21'  'A.P1.7/CAOUT/UCB0SIMO/UCB0SDA/A7/CA7/TDO/TDI' '22'  'A.P2.0/TA1.0' '9' \
+         'A.P2.1/TA1.1' '10'  'A.P2.2/TA1.1' '11'  'A.P2.3/TA1.0' '15'  'A.P2.4/TA1.2' '16'  'A.P2.5/TA1.2' '17'  'A.P3.0/TA0.2' '7' \
+         'A.P3.1/TA1.0' '6'  'A.P3.2/TA1.1' '12'  'A.P3.3/TA1.2' '13'  'A.P3.4/TA0.0' '14'  'A.P3.5/TA0.1' '18'  'A.P3.6/TA0.2' '19' \
+         'A.P3.7/TA1CLK/CAOUT' '20'  'A.TEST/SBWTCK' '24'  'A.XIN/P2.6/TA0.1' '26'  'A.XOUT/P2.7' '25';
+
+Edit 'NMJ4HFD2.dev';
+Prefix 'J';
+Description '';
+Value off;
+Add NMJ4HFD2 'A' next 0 (0 0);
+Package 'NMJ4HFD2' '';
+Technology '';
+Connect  'A.S' 'S'  'A.SN' 'SN'  'A.T' 'T'  'A.TN' 'TN';
+
+Edit 'TPS73701_DRB_8.dev';
+Prefix 'U';
+Description '';
+Value off;
+Add TPS73701_DRB_8 'A' next 0 (0 0);
+Package 'DRB8_1P75X1P5' '';
+Technology '';
+Technology '';
+Attribute DATASHEETURL 'http://www.ti.com/lit/gpn/TPS73701' variable;
+Attribute PIN_COUNT '8' variable;
+Attribute GENERIC_PART_NUMBER 'TPS73701' variable;
+Attribute DESCRIPTION 'Single Output LDO, 1A, Adj. (1.2 to 5.0V), Reverse Current Protection' variable;
+Attribute FAMILY_NAME 'SINGLE CHANNEL LDO' variable;
+Attribute MANUFACTURER 'Texas Instruments' variable;
+Attribute INDUSTRY_STD_PKG_TYPE 'SON' variable;
+Attribute VENDOR 'Texas Instruments' variable;
+Attribute MANUFACTURER_PART_NUMBER 'tps73701_drb_8' variable;
+Attribute PACKAGE_DESIGNATOR 'DRB' variable;
+Connect  'A.EN' '5'  'A.EPAD' '9'  'A.GND' '4'  'A.IN' '8'  'A.NC' '7' \
+         'A.NC_2' '2'  'A.NC_3' '6'  'A.NR/FB' '3'  'A.OUT' '1';
+
+Edit 'FXO-HC735-12.dev';
+Prefix 'U';
+Description '';
+Value off;
+Add FXO-HC735-12 'A' next 0 (0 0);
+Package 'FXO-HC735-12' '';
+Technology '';
+Connect  'A.E/D' 'E/D'  'A.GND' 'GND'  'A.OUT' 'OUT'  'A.VDD' 'VDD';
+
+Edit 'TC2030.dev';
+Prefix 'J';
+Description '\
+<h3>TAG-CONNECT ICSP Connector</h3><BR><I>Manufacturer:</I> <a href="http://www.tag-connect.com">Tag-Connect</a><BR>\n\
+<BR>Cable for easy In-Circuit Serial Programming. Modified for SPY-BI-TAG.<BR>\n\
+Two variants - one "with legs" (for hands-free fit on PCB) and another "without legs" for quick programming.\n\
+\n\
+<p>\n\
+<TABLE cellspacing=0 cellpadding=0 border=0>\n\
+<TR><TD width=20></TD><TD>\n\
+<TABLE cellspacing=0 cellpadding=1 border=1>\n\
+<TR bgcolor=silver><TD align=center>PAD</TD><TD align=center>Description</TD></TR>\n\
+<TR><TD align=center>1</TD><TD>SBWTDIO</TD></TR>\n\
+<TR><TD align=center>2</TD><TD>VCC OUT</TD></TR>\n\
+<TR><TD align=center>3</TD><TD>TCK</TD></TR>\n\
+<TR><TD align=center>4</TD><TD>VCC IN</TD></TR>\n\
+<TR><TD align=center>5</TD><TD>VSS</TD></TR>\n\
+<TR><TD align=center>6</TD><TD>SBWTCK</TD></TR>\n\
+</TABLE>\n\
+</TD></TR></TABLE><BR><BR>\n\
+\n\
+©2009 ROFA.cz - modified by Greg Larmore &#8249;larmoreg@gmail.com&#8250;';
+Value on;
+Add ICSP 'G$1' next 0 (0 0);
+Package 'TC2030-MCP' '-MCP';
+Technology '';
+Connect  'G$1.SBWTCK' '6'  'G$1.SBWTDIO' '1'  'G$1.TCK' '3'  'G$1.VCC_IN' '4'  'G$1.VCC_OUT' '2' \
+         'G$1.VSS' '5';
+Package 'TC2030-MCP-NL' '-MCP-NL';
+Technology '';
+Connect  'G$1.SBWTCK' '6'  'G$1.SBWTDIO' '1'  'G$1.TCK' '3'  'G$1.VCC_IN' '4'  'G$1.VCC_OUT' '2' \
+         'G$1.VSS' '5';
+Package 'TC2030-MCP-NL-CP' '';
+Technology '';
+Connect  'G$1.SBWTCK' '6'  'G$1.SBWTDIO' '1'  'G$1.TCK' '3'  'G$1.VCC_IN' '4'  'G$1.VCC_OUT' '2' \
+         'G$1.VSS' '5';
+
+Edit 'BEAGLEBONE_OUTLINE.dev';
+Prefix '';
+Description '';
+Value off;
+Add BEAGLEBONE 'G$1' next 0 (0 0);
+Package 'BEAGLEBONE_SHIELD' '';
+Technology '';
+Connect  'G$1.AIN0' '85'  'G$1.AIN1' '86'  'G$1.AIN2' '83'  'G$1.AIN3' '84'  'G$1.AIN4' '79' \
+         'G$1.AIN5' '82'  'G$1.AIN6' '81'  'G$1.CLKOUT2' '87'  'G$1.EHRPWM1A' '60'  'G$1.EHRPWM1B' '62'  'G$1.EHRPWM2A' '19' \
+         'G$1.EHRPWM2B' '13'  'G$1.GND@1' '47'  'G$1.GND@2' '48'  'G$1.GND@3' '89'  'G$1.GND@4' '91'  'G$1.GND@5' '90' \
+         'G$1.GND@6' '92'  'G$1.GND@7' '1'  'G$1.GND@8' '2'  'G$1.GNDA_ADC' '80'  'G$1.GPIO0_7' '88'  'G$1.GPIO0_26' '14' \
+         'G$1.GPIO0_27' '17'  'G$1.GPIO1_0' '25'  'G$1.GPIO1_1' '24'  'G$1.GPIO1_2' '5'  'G$1.GPIO1_3' '6'  'G$1.GPIO1_4' '23' \
+         'G$1.GPIO1_5' '22'  'G$1.GPIO1_6' '3'  'G$1.GPIO1_7' '4'  'G$1.GPIO1_12' '12'  'G$1.GPIO1_13' '11'  'G$1.GPIO1_14' '16' \
+         'G$1.GPIO1_15' '15'  'G$1.GPIO1_16' '61'  'G$1.GPIO1_17' '69'  'G$1.GPIO1_28' '58'  'G$1.GPIO1_29' '26'  'G$1.GPIO1_30' '21' \
+         'G$1.GPIO1_31' '20'  'G$1.GPIO2_1' '18'  'G$1.GPIO2_6' '45'  'G$1.GPIO2_7' '46'  'G$1.GPIO2_8' '43'  'G$1.GPIO2_9' '44' \
+         'G$1.GPIO2_10' '41'  'G$1.GPIO2_11' '42'  'G$1.GPIO2_12' '39'  'G$1.GPIO2_13' '40'  'G$1.GPIO2_22' '27'  'G$1.GPIO2_23' '29' \
+         'G$1.GPIO2_24' '28'  'G$1.GPIO2_25' '30'  'G$1.GPIO3_19' '73'  'G$1.GPIO3_21' '71'  'G$1.I2C1_SCL' '63'  'G$1.I2C1_SDA' '64' \
+         'G$1.I2C2_SCL' '65'  'G$1.I2C2_SDA' '66'  'G$1.PWR_BUT' '55'  'G$1.SPI1_CS0' '74'  'G$1.SPI1_DI' '76'  'G$1.SPI1_DO' '75' \
+         'G$1.SPI1_SCLK' '77'  'G$1.SYS_5V@1' '53'  'G$1.SYS_5V@2' '54'  'G$1.SYS_RESETN' '56'  'G$1.TIMER4' '7'  'G$1.TIMER5' '9' \
+         'G$1.TIMER6' '10'  'G$1.TIMER7' '8'  'G$1.UART1_RXD' '72'  'G$1.UART1_TXD' '70'  'G$1.UART2_RXD' '68'  'G$1.UART2_TXD' '67' \
+         'G$1.UART3_CTSN' '36'  'G$1.UART3_RTSN' '34'  'G$1.UART4_CTSN' '35'  'G$1.UART4_RTSN' '33'  'G$1.UART4_RXD' '57'  'G$1.UART4_TXD' '59' \
+         'G$1.UART5_CTSN' '31'  'G$1.UART5_RTSN' '32'  'G$1.UART5_RXD' '38'  'G$1.UART5_TXD' '37'  'G$1.VDD_3V3EXP@1' '49'  'G$1.VDD_3V3EXP@2' '50' \
+         'G$1.VDD_5V@1' '51'  'G$1.VDD_5V@2' '52'  'G$1.VDD_ADC' '78';
+
+Edit 'CTS-219-2MST.dev';
+Prefix 'S';
+Description '';
+Value off;
+Add CTS-219-2MST 'A' next 0 (0 0);
+Package 'CTS-219-2MST' '';
+Technology '';
+Connect  'A.P$1' 'P$1'  'A.P$2' 'P$2'  'A.P$3' 'P$3'  'A.P$4' 'P$4';
+Grid inch;
