@@ -4181,11 +4181,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <junction x="55.88" y="198.12"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<wire x1="40.64" y1="185.42" x2="35.56" y2="185.42" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="SPKM" gate="G$1" pin="P"/>
